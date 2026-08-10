@@ -1,4 +1,4 @@
-# uea_project
+# Chromosomal Rearrangement Study of Acinetobacter Baumannii
 
 Tools, pipelines, and outputs for a chromosomal rearrangement study on *Acinetobacter
 baumannii*, using short-read and long-read whole-genome sequencing.

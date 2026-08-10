@@ -1,0 +1,12 @@
+/*
+!/tools/
+!/scripts/
+!/qc_output/
+!/mapping/
+!/analysis/
+!/.gitignore
+!/.gitattributes
+!/LICENSE
+
+**/__pycache__/
+**/*.pyc

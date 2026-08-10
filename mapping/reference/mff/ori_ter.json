@@ -1,0 +1,10 @@
+{
+  "reference": "short_read_data/short_read_seq_1/mff.fna",
+  "header": "CP012004.1 CP012004.1 Acinetobacter baumannii ATCC 17978-mff, complete genome",
+  "genome_length": 3857743,
+  "window": 1000,
+  "oriC": 1918501,
+  "ter": 501,
+  "orientation_swapped_vs_approx": false,
+  "approx_oric_given": 1918991
+}

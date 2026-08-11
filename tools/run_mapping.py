@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
-"""Align the 8 mff trimmed sample pairs to the mff reference (Bowtie2), then
-deduplicate (samtools sort/fixmate/markdup) — PCR duplicates must be removed before
+"""Align a strain's trimmed sample pairs to its reference (Bowtie2), then
+deduplicate (samtools sort/fixmate/markdup). PCR duplicates must be removed before
 marker-frequency analysis, since they create false coverage spikes unrelated to
 real DNA replication.
 
+Usage: python3 run_mapping.py <strain>
+
+The sample list for the strain is read from mapping/coverage/sample_metadata.csv
+(built by tools/build_sample_metadata.py).
+
 Intended to be invoked through scripts/run_logged.py (see tools/run_mapping.sh) so
-the whole 8-sample batch is recorded as one log entry.
+the whole per-strain batch is recorded as one log entry.
 """
+import csv
 import os
 import re
 import subprocess
@@ -15,12 +21,18 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 TRIMMED_DIR = PROJECT_ROOT / "trimmed_data" / "short_read"
-INDEX_PREFIX = PROJECT_ROOT / "mapping" / "reference" / "mff" / "mff_index"
-BAM_DIR = PROJECT_ROOT / "mapping" / "bam" / "mff"
-
-MFF_SAMPLES = [f"PID-2861-{n}" for n in range(25, 33)]  # sample numbers 25-32 (mff, per metadata)
+METADATA_CSV = PROJECT_ROOT / "mapping" / "coverage" / "sample_metadata.csv"
 
 ALIGN_RATE_RE = re.compile(r"([\d.]+)% overall alignment rate")
+
+
+def samples_for_strain(strain):
+    with open(METADATA_CSV, newline="") as f:
+        rows = list(csv.DictReader(f))
+    return sorted(
+        (r["pid_sample"] for r in rows if r["strain"] == strain),
+        key=lambda s: int(s.rsplit("-", 1)[1]),
+    )
 
 
 def run(cmd, **kwargs):
@@ -36,21 +48,21 @@ def parse_markdup_stats(text):
     return stats
 
 
-def process_sample(sample, threads):
+def process_sample(sample, index_prefix, bam_dir, threads):
     r1 = TRIMMED_DIR / f"{sample}_R1.trimmed.fastq.gz"
     r2 = TRIMMED_DIR / f"{sample}_R2.trimmed.fastq.gz"
     if not r1.exists() or not r2.exists():
         return {"sample": sample, "ok": False, "error": f"missing trimmed fastq(s) for {sample}"}
 
-    sam_path = BAM_DIR / f"{sample}.sam"
-    sorted_bam = BAM_DIR / f"{sample}.sorted.bam"
-    namesorted_bam = BAM_DIR / f"{sample}.namesorted.bam"
-    fixmate_bam = BAM_DIR / f"{sample}.fixmate.bam"
-    coordsorted_bam = BAM_DIR / f"{sample}.fixmate.sorted.bam"
-    dedup_bam = BAM_DIR / f"{sample}.dedup.bam"
+    sam_path = bam_dir / f"{sample}.sam"
+    sorted_bam = bam_dir / f"{sample}.sorted.bam"
+    namesorted_bam = bam_dir / f"{sample}.namesorted.bam"
+    fixmate_bam = bam_dir / f"{sample}.fixmate.bam"
+    coordsorted_bam = bam_dir / f"{sample}.fixmate.sorted.bam"
+    dedup_bam = bam_dir / f"{sample}.dedup.bam"
 
     bt2 = run([
-        "bowtie2", "-x", str(INDEX_PREFIX), "-1", str(r1), "-2", str(r2),
+        "bowtie2", "-x", str(index_prefix), "-1", str(r1), "-2", str(r2),
         "-p", str(threads), "--rg-id", sample, "--rg", f"SM:{sample}",
         "-S", str(sam_path),
     ])
@@ -105,17 +117,30 @@ def process_sample(sample, threads):
 
 
 def main():
-    if not Path(str(INDEX_PREFIX) + ".1.bt2").exists():
-        print(f"ERROR: Bowtie2 index not found at {INDEX_PREFIX} — run tools/build_reference_index.sh first.", file=sys.stderr)
+    if len(sys.argv) != 2:
+        print("Usage: run_mapping.py <strain>", file=sys.stderr)
+        sys.exit(2)
+    strain = sys.argv[1]
+
+    index_prefix = PROJECT_ROOT / "mapping" / "reference" / strain / f"{strain}_index"
+    bam_dir = PROJECT_ROOT / "mapping" / "bam" / strain
+
+    if not Path(str(index_prefix) + ".1.bt2").exists():
+        print(f"ERROR: Bowtie2 index not found at {index_prefix}. Run tools/build_reference_index.sh first.", file=sys.stderr)
+        sys.exit(1)
+
+    samples = samples_for_strain(strain)
+    if not samples:
+        print(f"ERROR: no samples found for strain '{strain}' in {METADATA_CSV}", file=sys.stderr)
         sys.exit(1)
 
     threads = max(os.cpu_count() - 2, 1) if os.cpu_count() else 4
-    BAM_DIR.mkdir(parents=True, exist_ok=True)
+    bam_dir.mkdir(parents=True, exist_ok=True)
 
     results = []
-    for i, sample in enumerate(MFF_SAMPLES, 1):
-        print(f"[{i}/{len(MFF_SAMPLES)}] {sample} ...", flush=True)
-        res = process_sample(sample, threads)
+    for i, sample in enumerate(samples, 1):
+        print(f"[{i}/{len(samples)}] {sample} ...", flush=True)
+        res = process_sample(sample, index_prefix, bam_dir, threads)
         results.append(res)
         if not res["ok"]:
             print(f"  FAILED: {res['error']}")
@@ -126,19 +151,19 @@ def main():
     ok = [r for r in results if r["ok"]]
 
     print()
-    print("=== Mapping + dedup summary (mff, 8 samples) ===")
+    print(f"=== Mapping + dedup summary ({strain}, {len(samples)} samples) ===")
     fail_suffix = f", {len(failures)} FAILED" if failures else ""
-    print(f"Samples processed: {len(ok)}/{len(MFF_SAMPLES)} succeeded{fail_suffix}")
+    print(f"Samples processed: {len(ok)}/{len(samples)} succeeded{fail_suffix}")
     for r in ok:
         print(f"  {r['sample']}: alignment {r['align_rate']}%, duplicates removed {r['dup_pct']:.2f}%")
     for r in failures:
-        print(f"  {r['sample']}: FAILED — {r['error']}")
+        print(f"  {r['sample']}: FAILED. {r['error']}")
     if ok:
         avg_align = sum(r["align_rate"] for r in ok if r["align_rate"] is not None) / len(ok)
         avg_dup = sum(r["dup_pct"] for r in ok) / len(ok)
         print(f"Average alignment rate: {avg_align:.2f}%")
         print(f"Average duplicate rate removed: {avg_dup:.2f}%")
-    print(f"Deduplicated BAMs written to: {BAM_DIR}")
+    print(f"Deduplicated BAMs written to: {bam_dir}")
 
     sys.exit(1 if failures else 0)
 

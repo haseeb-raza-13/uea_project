@@ -85,9 +85,11 @@ version, and outcome, in a project log kept outside this repository.
 
 ## Notes on scope
 
-This repository currently covers strain **mff**. The pipeline is written to be
-reused for additional strains by supplying their reference genome and running the
-same sequence of tools.
+This repository currently covers five strains: **mff, VU, AB30, AB42, and Lac-4**.
+Each strain has its own reference index, alignments, coverage tables, and figures
+under `mapping/` and `analysis/replication_profile/<strain>/`. The pipeline is
+written to be reused for additional strains by supplying their reference genome and
+running the same sequence of tools with the strain name as an argument.
 
 Git LFS is required to fetch the BAM files in `mapping/bam/`. Run `git lfs install`
 once, then clone or pull as usual.

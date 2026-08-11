@@ -1,0 +1,10 @@
+{
+  "reference": "short_read_data/short_read_seq_1/AB30.fna",
+  "header": "CP009257.1 CP009257.1 Acinetobacter baumannii strain AB030, complete genome",
+  "genome_length": 4335793,
+  "window": 1000,
+  "oriC": 3228501,
+  "ter": 2501,
+  "orientation_swapped_vs_approx": false,
+  "approx_oric_given": null
+}

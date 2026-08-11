@@ -1,0 +1,13 @@
+phase,panel,series,ori_ter_ratio
+stat,Drug-treated: replicate A vs B,drug_A,0.9894920354553051
+stat,Drug-treated: replicate A vs B,drug_B,0.9606254927883647
+stat,Untreated (no drug): replicate A vs B,ND_A,1.1067573849532963
+stat,Untreated (no drug): replicate A vs B,ND_B,1.2187624867719153
+stat,Drug-treated vs untreated (replicate-averaged),drug_avg,0.9743577623458365
+stat,Drug-treated vs untreated (replicate-averaged),ND_avg,1.2160836753100994
+exp,Drug-treated: replicate A vs B,drug_A,1.0258487234984812
+exp,Drug-treated: replicate A vs B,drug_B,1.1322848939326615
+exp,Untreated (no drug): replicate A vs B,ND_A,1.1253860614378481
+exp,Untreated (no drug): replicate A vs B,ND_B,1.1115709218883503
+exp,Drug-treated vs untreated (replicate-averaged),drug_avg,1.0693906737249046
+exp,Drug-treated vs untreated (replicate-averaged),ND_avg,1.1296340650182868

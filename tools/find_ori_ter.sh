@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# Independently locate oriC/ter on the mff reference via cumulative GC-skew.
-# Run from WSL: bash tools/find_ori_ter.sh
+# Independently locate oriC/ter on a strain's reference via cumulative GC-skew.
+# Run from WSL: bash tools/find_ori_ter.sh <strain> <reference.fna> [approx_oric]
+# Example:      bash tools/find_ori_ter.sh AB30 short_read_data/short_read_seq_1/AB30.fna
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -11,14 +12,22 @@ conda activate seqqc
 
 cd "$PROJECT_ROOT"
 
-REFERENCE="short_read_data/short_read_seq_1/mff.fna"
-OUT_DIR="mapping/reference/mff"
-APPROX_ORIC=1918991
+STRAIN="${1:?Usage: find_ori_ter.sh <strain> <reference.fna> [approx_oric]}"
+REFERENCE="${2:?Usage: find_ori_ter.sh <strain> <reference.fna> [approx_oric]}"
+APPROX_ORIC="${3:-}"
+OUT_DIR="mapping/reference/$STRAIN"
 
 mkdir -p "$OUT_DIR"
 
+EXTRA_ARGS=()
+LABEL_SUFFIX=""
+if [ -n "$APPROX_ORIC" ]; then
+  EXTRA_ARGS=(--approx-oric "$APPROX_ORIC")
+  LABEL_SUFFIX=" --approx-oric $APPROX_ORIC"
+fi
+
 python3 scripts/run_logged.py \
-  --purpose "Independently locate oriC/ter on mff.fna via cumulative GC-skew (Lobry's method), since the user-provided coordinates were tied to a chromosome length that didn't match this reference file" \
+  --purpose "Locate oriC/ter on the $STRAIN reference via cumulative GC-skew (Lobry's method)" \
   --tool python3 \
-  --label "find_ori_ter.py mff.fna --window 1000 --approx-oric $APPROX_ORIC" \
-  -- python3 tools/find_ori_ter.py "$REFERENCE" "$OUT_DIR" --window 1000 --approx-oric "$APPROX_ORIC"
+  --label "find_ori_ter.py $(basename "$REFERENCE") --window 1000$LABEL_SUFFIX" \
+  -- python3 tools/find_ori_ter.py "$REFERENCE" "$OUT_DIR" --window 1000 "${EXTRA_ARGS[@]}"

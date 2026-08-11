@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Compute windowed marker-frequency (read-start count) profiles from deduplicated
-BAMs, normalize to the genome-wide median, and fold genomic position onto the
-oriC=0 / ter=+-1 replichore-normalized coordinate (Skovgaard et al. 2011 methodology).
+"""Compute windowed marker-frequency (read-start count) profiles from a strain's
+deduplicated BAMs, normalize to the genome-wide median, and fold genomic position
+onto the oriC=0 / ter=+-1 replichore-normalized coordinate (Skovgaard et al. 2011
+methodology).
+
+Usage: python3 compute_marker_frequency.py <strain>
 
 Uses `bedtools genomecov -5 -bg` to get a read-start depth track (each read
 contributes exactly 1 unit of depth at its 5' position), then bins that track into
-fixed-size windows — summing depth*overlap_length over a window equals the total
+fixed-size windows. Summing depth*overlap_length over a window equals the total
 number of read starts in that window.
 
 Intended to be invoked through scripts/run_logged.py (see
@@ -22,9 +25,6 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _genome_utils import replichore_normalize
 
-BAM_DIR = PROJECT_ROOT / "mapping" / "bam" / "mff"
-OUT_DIR = PROJECT_ROOT / "mapping" / "coverage" / "mff"
-ORI_TER_JSON = PROJECT_ROOT / "mapping" / "reference" / "mff" / "ori_ter.json"
 WINDOW_SIZES = [1000, 10000]
 
 
@@ -50,7 +50,7 @@ def bin_bedgraph(bedgraph_text, window_size, genome_length):
     return counts
 
 
-def process_sample(sample, bam_path, oric, ter, genome_length):
+def process_sample(sample, bam_path, out_dir, oric, ter, genome_length):
     r = subprocess.run(["bedtools", "genomecov", "-5", "-bg", "-ibam", str(bam_path)],
                         capture_output=True, text=True)
     if r.returncode != 0:
@@ -74,7 +74,7 @@ def process_sample(sample, bam_path, oric, ter, genome_length):
             log2_ratio = math.log2(count / baseline)
             rows.append((w_start + 1, w_end, mid, count, norm_pos, log2_ratio))
 
-        out_path = OUT_DIR / f"{sample}_{window_size // 1000}kb.tsv"
+        out_path = out_dir / f"{sample}_{window_size // 1000}kb.tsv"
         with open(out_path, "w") as f:
             f.write("window_start\twindow_end\twindow_mid\traw_count\tnorm_position\tlog2_ratio\n")
             for row in rows:
@@ -84,19 +84,28 @@ def process_sample(sample, bam_path, oric, ter, genome_length):
 
 
 def main():
-    if not ORI_TER_JSON.exists():
-        print(f"ERROR: {ORI_TER_JSON} not found — run tools/find_ori_ter.sh first.", file=sys.stderr)
+    if len(sys.argv) != 2:
+        print("Usage: compute_marker_frequency.py <strain>", file=sys.stderr)
+        sys.exit(2)
+    strain = sys.argv[1]
+
+    bam_dir = PROJECT_ROOT / "mapping" / "bam" / strain
+    out_dir = PROJECT_ROOT / "mapping" / "coverage" / strain
+    ori_ter_json = PROJECT_ROOT / "mapping" / "reference" / strain / "ori_ter.json"
+
+    if not ori_ter_json.exists():
+        print(f"ERROR: {ori_ter_json} not found. Run tools/find_ori_ter.sh first.", file=sys.stderr)
         sys.exit(1)
-    with open(ORI_TER_JSON) as f:
+    with open(ori_ter_json) as f:
         ori_ter = json.load(f)
     oric, ter, genome_length = ori_ter["oriC"], ori_ter["ter"], ori_ter["genome_length"]
 
-    bams = sorted(BAM_DIR.glob("*.dedup.bam"))
+    bams = sorted(bam_dir.glob("*.dedup.bam"))
     if not bams:
-        print(f"ERROR: no *.dedup.bam files found in {BAM_DIR} — run tools/run_mapping.sh first.", file=sys.stderr)
+        print(f"ERROR: no *.dedup.bam files found in {bam_dir}. Run tools/run_mapping.sh first.", file=sys.stderr)
         sys.exit(1)
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"oriC={oric:,}  ter={ter:,}  genome_length={genome_length:,}")
     print(f"Windows: {WINDOW_SIZES}")
@@ -106,7 +115,7 @@ def main():
     for i, bam in enumerate(bams, 1):
         sample = bam.stem.replace(".dedup", "")
         print(f"[{i}/{len(bams)}] {sample} ...", flush=True)
-        ok, err = process_sample(sample, bam, oric, ter, genome_length)
+        ok, err = process_sample(sample, bam, out_dir, oric, ter, genome_length)
         if ok:
             ok_samples.append(sample)
         else:
@@ -114,13 +123,13 @@ def main():
             print(f"  FAILED: {err}")
 
     print()
-    print("=== Marker-frequency computation summary (mff) ===")
+    print(f"=== Marker-frequency computation summary ({strain}) ===")
     print(f"Samples processed: {len(ok_samples)}/{len(bams)} succeeded" + (f", {len(failures)} FAILED" if failures else ""))
     print(f"Window sizes: {WINDOW_SIZES} bp")
-    print(f"oriC={oric:,} bp, ter={ter:,} bp (from {ORI_TER_JSON.name})")
-    print(f"TSVs written to: {OUT_DIR}")
+    print(f"oriC={oric:,} bp, ter={ter:,} bp (from {ori_ter_json.name})")
+    print(f"TSVs written to: {out_dir}")
     for sample, err in failures:
-        print(f"  {sample}: FAILED — {err}")
+        print(f"  {sample}: FAILED. {err}")
 
     sys.exit(1 if failures else 0)
 

@@ -1,0 +1,10 @@
+{
+  "reference": "short_read_data/short_read_seq_1/Lac4.fna",
+  "header": "CP007712.1 CP007712.1 Acinetobacter baumannii LAC-4, complete genome",
+  "genome_length": 3954354,
+  "window": 1000,
+  "oriC": 1206501,
+  "ter": 3954178,
+  "orientation_swapped_vs_approx": false,
+  "approx_oric_given": null
+}

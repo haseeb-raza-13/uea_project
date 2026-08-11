@@ -1,13 +1,13 @@
 phase,panel,series,ori_ter_ratio
-stat,Drug-treated: replicate A vs B,drug_A,0.9698240932290421
-stat,Drug-treated: replicate A vs B,drug_B,0.958464896709634
-stat,Untreated (no drug): replicate A vs B,ND_A,0.969393960907547
-stat,Untreated (no drug): replicate A vs B,ND_B,0.9390002844335469
-stat,Drug-treated vs untreated (replicate-averaged),drug_avg,0.9718246961438665
-stat,Drug-treated vs untreated (replicate-averaged),ND_avg,0.9529467468907874
-exp,Drug-treated: replicate A vs B,drug_A,1.0057432113693454
-exp,Drug-treated: replicate A vs B,drug_B,1.0242323273468257
-exp,Untreated (no drug): replicate A vs B,ND_A,1.056438658169594
-exp,Untreated (no drug): replicate A vs B,ND_B,1.0356097837249931
-exp,Drug-treated vs untreated (replicate-averaged),drug_avg,1.0047414147491158
-exp,Drug-treated vs untreated (replicate-averaged),ND_avg,1.0370717782317338
+stat,Meropenem-treated: replicate A vs B,drug_A,0.9698239968558847
+stat,Meropenem-treated: replicate A vs B,drug_B,0.9584648706986352
+stat,Untreated (no drug): replicate A vs B,ND_A,0.9693938139208271
+stat,Untreated (no drug): replicate A vs B,ND_B,0.9390004974042634
+stat,Meropenem-treated vs untreated (averaged),drug_avg,0.971824635080764
+stat,Meropenem-treated vs untreated (averaged),ND_avg,0.9529467842667323
+exp,Meropenem-treated: replicate A vs B,drug_A,1.0057431609486704
+exp,Meropenem-treated: replicate A vs B,drug_B,1.024232342165569
+exp,Untreated (no drug): replicate A vs B,ND_A,1.0564385164184764
+exp,Untreated (no drug): replicate A vs B,ND_B,1.0356096944646063
+exp,Meropenem-treated vs untreated (averaged),drug_avg,1.0047414620420803
+exp,Meropenem-treated vs untreated (averaged),ND_avg,1.0370717255638389

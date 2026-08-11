@@ -1,18 +1,24 @@
 #!/usr/bin/env Rscript
 # Publication-ready marker-frequency / replication-profile plots, following
 # Skovgaard et al. 2011 (Genome Research) methodology: x = genomic position
-# normalized per replichore (oriC = 0, ter = +-1), y = log2(marker frequency)
-# relative to the genome-wide median window count. Exponential-phase cultures
-# are expected to show a "tent" peak at oriC tapering to ter; stationary-phase
+# normalized per replichore (oriC = 0, ter = +-1), y = log2(read-start density,
+# reads per kb), computed independently at each window resolution with no
+# per-sample median/baseline normalization. Exponential-phase cultures are
+# expected to show a "tent" peak at oriC tapering to ter; stationary-phase
 # cultures (non-replicating) should be flat.
 #
 # Points are plotted independently at both 1kb and 10kb resolution; no line
 # connects them, since adjacent genomic windows are not literally linked
-# observations. Each panel is annotated with an Ori:Ter ratio (median marker
-# frequency near oriC divided by median marker frequency near ter, from the
-# 10kb series), the same style of summary statistic reported in the reference
-# paper. The y-axis uses the same fixed range on every panel, across every
-# strain, so figures are directly comparable.
+# observations. Each panel is annotated with an Ori:Ter ratio (median read
+# density near oriC divided by median read density near ter, from the 10kb
+# series), the same style of summary statistic reported in the reference
+# paper. The y-axis uses one fixed range per strain (shared across both growth
+# phases and all panels for that strain), since absolute read depth differs
+# strain to strain with sequencing depth and is no longer normalized away.
+#
+# In addition to the 3-panel composite figure per phase, each individual panel
+# is also saved on its own (PNG + PDF) so a single result can be cited or used
+# standalone.
 #
 # Usage:
 #   Rscript plot_replication_profile.R <strain> <display_name> [coverage_dir] [metadata_csv] [out_dir]
@@ -40,8 +46,10 @@ display_name  <- argv[2]
 coverage_dir  <- if (length(argv) >= 3) argv[3] else file.path("mapping/coverage", strain)
 metadata_csv  <- if (length(argv) >= 4) argv[4] else "mapping/coverage/sample_metadata.csv"
 out_dir       <- if (length(argv) >= 5) argv[5] else file.path("analysis/replication_profile", strain, "figures")
+individual_dir <- file.path(out_dir, "individual")
 
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(individual_dir, recursive = TRUE, showWarnings = FALSE)
 
 # ---- fonts --------------------------------------------------------------
 font_add_google("Lato", "Lato")
@@ -54,11 +62,6 @@ dark2 <- brewer.pal(3, "Dark2")
 palette_replicate <- c(A = dark2[1], B = dark2[2])
 palette_treatment <- c(drug = dark2[1], ND = dark2[2])
 
-# ---- fixed y-axis, shared across every strain and phase for comparability --
-Y_LIMITS <- c(-5, 3)
-Y_BREAKS <- seq(-5, 3, 1)
-LABEL_Y  <- 2.8
-
 # ---- data ------------------------------------------------------------------
 metadata <- read_csv(metadata_csv, show_col_types = FALSE) %>%
   filter(strain == !!strain)
@@ -70,34 +73,45 @@ read_sample_tsv <- function(pid_sample, window_label) {
   df
 }
 
-load_resolution <- function(window_label) {
+load_resolution <- function(window_label, window_kb) {
   do.call(rbind, lapply(metadata$pid_sample, read_sample_tsv, window_label = window_label)) %>%
     left_join(metadata, by = "pid_sample") %>%
-    mutate(abs_pos = abs(norm_position))
+    mutate(abs_pos = abs(norm_position),
+           log2_depth = log2(raw_count / window_kb))
 }
 
-data_10kb <- load_resolution("10kb")
-data_1kb  <- load_resolution("1kb")
+data_10kb <- load_resolution("10kb", 10)
+data_1kb  <- load_resolution("1kb", 1)
 
 average_replicates <- function(df, trt, phs) {
   sub <- df %>% filter(treatment == trt, phase == phs)
   sub %>%
     group_by(window_mid, norm_position, abs_pos) %>%
-    summarise(log2_ratio = mean(log2_ratio), .groups = "drop") %>%
+    summarise(log2_depth = mean(log2_depth), .groups = "drop") %>%
     mutate(treatment = trt, phase = phs)
 }
 
+# ---- fixed y-axis, shared across both phases and all panels for this strain --
+all_depth <- c(data_1kb$log2_depth, data_10kb$log2_depth)
+y_min <- floor(min(all_depth, na.rm = TRUE))
+y_max <- ceiling(max(all_depth, na.rm = TRUE)) + 1  # headroom for oriC/ter text labels
+Y_LIMITS <- c(y_min, y_max)
+Y_BREAKS <- pretty(Y_LIMITS, n = 6)
+LABEL_Y  <- y_max - 0.2
+
 # ---- Ori:Ter ratio ----------------------------------------------------------
-# Median log2(marker frequency) in windows near oriC (|position| <= 0.1) versus
+# Median log2(read density) in windows near oriC (|position| <= 0.1) versus
 # near ter (|position| >= 0.9), converted back to a linear-scale fold ratio.
 # Median (not mean) so a handful of extreme windows near either boundary don't
-# dominate the estimate.
+# dominate the estimate. Scale-invariant to the reads-per-kb divisor, so this
+# is numerically identical to the ratio computed under the earlier
+# median-normalized definition.
 ORI_ZONE <- 0.1
 ratio_records <- list()
 
 compute_ratio <- function(df) {
-  ori_val <- median(df$log2_ratio[abs(df$norm_position) <= ORI_ZONE])
-  ter_val <- median(df$log2_ratio[abs(df$norm_position) >= (1 - ORI_ZONE)])
+  ori_val <- median(df$log2_depth[abs(df$norm_position) <= ORI_ZONE])
+  ter_val <- median(df$log2_depth[abs(df$norm_position) >= (1 - ORI_ZONE)])
   2^(ori_val - ter_val)
 }
 
@@ -115,8 +129,10 @@ record_ratio <- function(phs, panel, series, ratio) {
 base_theme <- theme_bw(base_size = 13, base_family = FONT) +
   theme(
     panel.grid.minor = element_blank(),
-    plot.title = element_text(face = "bold", size = 13, family = FONT),
+    plot.title = element_text(face = "bold", size = 12, family = FONT),
     plot.subtitle = element_text(size = 10, color = "grey30", family = FONT),
+    plot.caption = element_text(size = 8.5, family = FONT, hjust = 0, color = "grey20"),
+    plot.caption.position = "plot",
     legend.position = "bottom",
     text = element_text(family = FONT)
   )
@@ -134,12 +150,19 @@ axis_layers <- list(
   scale_x_continuous(limits = c(-1, 1), breaks = seq(-1, 1, 0.5)),
   scale_y_continuous(limits = Y_LIMITS, breaks = Y_BREAKS),
   labs(x = "Normalized position relative to oriC (oriC = 0, ter = ±1)",
-       y = expression(log[2]*"(marker frequency)"))
+       y = expression(log[2]*"(read-start density, reads per kb)"))
 )
 
 ratio_annotation <- function(label) {
   annotate("label", x = Inf, y = Inf, label = label, hjust = 1.02, vjust = 1.3,
            size = 3.1, family = FONT, fill = alpha("white", 0.75))
+}
+
+panel_caption <- function(phase_label) {
+  paste0(
+    "Strain ", display_name, ", ", phase_label, " phase. oriC = 0, ter = ±1. ",
+    "Ori:Ter is the median read-start density ratio between windows near oriC and near ter."
+  )
 }
 
 # ---- panel builders ---------------------------------------------------------
@@ -154,9 +177,9 @@ panel_AB <- function(trt, phs, title) {
   ratio_label <- paste(format_ratio("A:", ratio_a), format_ratio("B:", ratio_b), sep = "\n")
 
   ggplot() +
-    geom_point(data = sub1, aes(x = norm_position, y = log2_ratio, color = replicate),
+    geom_point(data = sub1, aes(x = norm_position, y = log2_depth, color = replicate),
                alpha = 0.12, size = 0.5, show.legend = FALSE) +
-    geom_point(data = sub10, aes(x = norm_position, y = log2_ratio, color = replicate),
+    geom_point(data = sub10, aes(x = norm_position, y = log2_depth, color = replicate),
                alpha = 0.8, size = 1.3) +
     ori_ter_layers + axis_layers +
     scale_color_manual(values = palette_replicate, name = "Biological replicate") +
@@ -173,40 +196,51 @@ panel_comparison <- function(phs, title) {
   ratio_nd   <- compute_ratio(sub10 %>% filter(treatment == "ND"))
   record_ratio(phs, title, "drug_avg", ratio_drug)
   record_ratio(phs, title, "ND_avg", ratio_nd)
-  ratio_label <- paste(format_ratio("Drug:", ratio_drug), format_ratio("Untreated:", ratio_nd), sep = "\n")
+  ratio_label <- paste(format_ratio("Meropenem:", ratio_drug), format_ratio("Untreated:", ratio_nd), sep = "\n")
 
   ggplot() +
-    geom_point(data = sub1, aes(x = norm_position, y = log2_ratio, color = treatment),
+    geom_point(data = sub1, aes(x = norm_position, y = log2_depth, color = treatment),
                alpha = 0.12, size = 0.5, show.legend = FALSE) +
-    geom_point(data = sub10, aes(x = norm_position, y = log2_ratio, color = treatment),
+    geom_point(data = sub10, aes(x = norm_position, y = log2_depth, color = treatment),
                alpha = 0.8, size = 1.3) +
     ori_ter_layers + axis_layers +
     scale_color_manual(values = palette_treatment, name = "Treatment",
-                        labels = c(drug = "Drug-treated", ND = "Untreated (no drug)")) +
+                        labels = c(drug = "Meropenem-treated", ND = "Untreated (no drug)")) +
     ratio_annotation(ratio_label) +
     labs(title = title) +
     base_theme
 }
 
+# ---- save one standalone panel ----------------------------------------------
+save_individual <- function(p, out_name, caption_text) {
+  p_standalone <- p + labs(caption = paste(strwrap(caption_text, width = 95), collapse = "\n"))
+  ggsave(file.path(individual_dir, paste0(out_name, ".png")), p_standalone,
+         width = 6.2, height = 5.8, dpi = 300, bg = "white")
+  ggsave(file.path(individual_dir, paste0(out_name, ".pdf")), p_standalone,
+         width = 6.2, height = 5.8, device = cairo_pdf)
+}
+
 # ---- build one composite figure per growth phase ---------------------------
 build_phase_figure <- function(phs, phase_label, out_name) {
-  pA <- panel_AB("drug", phs, "Drug-treated: replicate A vs B")
+  pA <- panel_AB("drug", phs, "Meropenem-treated: replicate A vs B")
   pB <- panel_AB("ND",   phs, "Untreated (no drug): replicate A vs B")
-  pC <- panel_comparison(phs, "Drug-treated vs untreated (replicate-averaged)")
+  pC <- panel_comparison(phs, "Meropenem-treated vs untreated (averaged)")
+
+  caption <- panel_caption(phase_label)
+  cap_wrapped <- paste(strwrap(caption, width = 175), collapse = "\n")
+
+  save_individual(pA, paste0(out_name, "_panelA_meropenem_repA_vs_repB"), caption)
+  save_individual(pB, paste0(out_name, "_panelB_untreated_repA_vs_repB"), caption)
+  save_individual(pC, paste0(out_name, "_panelC_meropenem_vs_untreated"), caption)
 
   combined <- (pA | pB | pC) +
     plot_layout(guides = "collect") &
     theme(legend.position = "bottom")
 
-  caption <- paste0(
-    "Strain ", display_name, ", ", phase_label, " phase. oriC = 0, ter = ±1. ",
-    "Ori:Ter is the median marker-frequency ratio between windows near oriC and near ter."
-  )
-
   final <- combined +
     plot_annotation(
       title = paste0("Replication Profile: Acinetobacter baumannii Strain ", display_name, ", ", phase_label, " Phase"),
-      caption = caption,
+      caption = cap_wrapped,
       tag_levels = "A",
       theme = theme(
         plot.title = element_text(face = "bold", size = 16, family = FONT, hjust = 0),
@@ -217,7 +251,7 @@ build_phase_figure <- function(phs, phase_label, out_name) {
 
   ggsave(file.path(out_dir, paste0(out_name, ".png")), final, width = 15, height = 5.5, dpi = 300, bg = "white")
   ggsave(file.path(out_dir, paste0(out_name, ".pdf")), final, width = 15, height = 5.5, device = cairo_pdf)
-  message("Saved: ", out_name, ".png / .pdf")
+  message("Saved: ", out_name, ".png / .pdf (composite) + 3 individual panels")
 }
 
 build_phase_figure("stat", "Stationary", "stationary_phase")
@@ -226,5 +260,6 @@ build_phase_figure("exp",  "Exponential", "exponential_phase")
 ratio_table <- do.call(rbind, ratio_records)
 write_csv(ratio_table, file.path(out_dir, "..", "ori_ter_ratios.csv"))
 
-message("Both composite figures written to ", out_dir)
+message("Composite + individual figures written to ", out_dir, " (individual/ subfolder)")
+message("Y-axis range for ", strain, ": [", Y_LIMITS[1], ", ", Y_LIMITS[2], "]")
 message("Ori:Ter ratio table written to ", file.path(out_dir, "..", "ori_ter_ratios.csv"))

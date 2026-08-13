@@ -1,0 +1,3 @@
+strain,phase,n_windows,n_excluded,t_test_p,mwu_p,n_up,n_down,n_ns
+VU,stat,4004,0,0,0,2,26,3976
+VU,exp,4004,0,3.7378616065479205e-109,0,88,34,3882

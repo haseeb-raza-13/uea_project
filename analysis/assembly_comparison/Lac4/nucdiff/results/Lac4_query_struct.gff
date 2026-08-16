@@ -1,0 +1,407 @@
+##gff-version 3
+##sequence-region	1	1	274901
+1	NucDiff_v2.0	SO:0000667	274894	274901	.	.	.	ID=SV_1;Name=unaligned_end;ins_len=8;query_dir=1;ref_sequence=CP007712.1;ref_coord=2650227;color=#EE0000
+##sequence-region	3	1	180746
+3	NucDiff_v2.0	SO:0000667	1	4	.	.	.	ID=SV_2;Name=unaligned_beginning;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=3413228;color=#EE0000
+3	NucDiff_v2.0	SO:1000002	2569	4663	.	.	.	ID=SV_3;Name=substitution;subst_len=2095;query_dir=1;ref_sequence=CP007712.1;ref_coord=3415794-3417888;color=#42C042
+3	NucDiff_v2.0	SO:0000159	4663	4663	.	.	.	ID=SV_4;Name=deletion;del_len=1249;query_dir=1;ref_sequence=CP007712.1;ref_coord=3417889-3419137;color=#0000EE
+3	NucDiff_v2.0	SO:0000159	135104	135104	.	.	.	ID=SV_5;Name=deletion;del_len=1087;query_dir=1;ref_sequence=CP007712.1;ref_coord=3549575-3550661;color=#0000EE
+3	NucDiff_v2.0	SO:0000159	135104	135104	.	.	.	ID=SV_6;Name=collapsed_repeat;del_len=3;query_dir=1;ref_sequence=CP007712.1;ref_coord=3550662-3550664;query_repeated_region=135102-135104;color=#0000EE
+3	NucDiff_v2.0	SO:0000159	142629	142629	.	.	.	ID=SV_7;Name=collapsed_tandem_repeat;del_len=135;query_dir=1;ref_sequence=CP007712.1;ref_coord=3558186-3558320;query_repeated_region_1=141716-142629;query_repeated_region_2=141845-142629;color=#0000EE
+##sequence-region	11	1	93622
+11	NucDiff_v2.0	SO:0000001	1	93622	.	.	.	ID=SV_8;Name=unaligned_sequence;color=#990000
+##sequence-region	15	1	73845
+15	NucDiff_v2.0	SO:0000159	45229	45229	.	.	.	ID=SV_9;Name=deletion;del_len=1039;query_dir=-1;ref_sequence=CP007712.1;ref_coord=3371245-3372283;color=#0000EE
+15	NucDiff_v2.0	SO:0000159	45229	45229	.	.	.	ID=SV_10;Name=collapsed_repeat;del_len=8;query_dir=-1;ref_sequence=CP007712.1;ref_coord=3371237-3371244;query_repeated_region=45222-45229;color=#0000EE
+15	NucDiff_v2.0	SO:0000159	53954	53954	.	.	.	ID=SV_11;Name=deletion;del_len=1087;query_dir=-1;ref_sequence=CP007712.1;ref_coord=3361425-3362511;color=#0000EE
+15	NucDiff_v2.0	SO:0000159	53954	53954	.	.	.	ID=SV_12;Name=collapsed_repeat;del_len=3;query_dir=-1;ref_sequence=CP007712.1;ref_coord=3361422-3361424;query_repeated_region=53952-53954;color=#0000EE
+##sequence-region	17	1	71860
+17	NucDiff_v2.0	SO:0000667	71830	71860	.	.	.	ID=SV_13;Name=unaligned_end;ins_len=31;query_dir=1;ref_sequence=CP007712.1;ref_coord=775904;color=#EE0000
+##sequence-region	20	1	64413
+20	NucDiff_v2.0	SO:0000159	60256	60256	.	.	.	ID=SV_14;Name=deletion;del_len=1318;query_dir=1;ref_sequence=CP007712.1;ref_coord=1712331-1713648;color=#0000EE
+20	NucDiff_v2.0	SO:0000159	60256	60256	.	.	.	ID=SV_15;Name=collapsed_repeat;del_len=8;query_dir=1;ref_sequence=CP007712.1;ref_coord=1713649-1713656;query_repeated_region=60249-60256;color=#0000EE
+##sequence-region	21	1	62703
+21	NucDiff_v2.0	SO:0000667	1	38	.	.	.	ID=SV_16;Name=unaligned_beginning;ins_len=38;query_dir=1;ref_sequence=CP007712.1;ref_coord=3842250;color=#EE0000
+##sequence-region	24	1	60321
+24	NucDiff_v2.0	SO:0000159	52595	52595	.	.	.	ID=SV_17;Name=deletion;del_len=1180;query_dir=-1;ref_sequence=CP007712.1;ref_coord=646606-647785;color=#0000EE
+24	NucDiff_v2.0	SO:0000159	52595	52595	.	.	.	ID=SV_18;Name=collapsed_repeat;del_len=9;query_dir=-1;ref_sequence=CP007712.1;ref_coord=646597-646605;query_repeated_region=52587-52595;color=#0000EE
+##sequence-region	26	1	56326
+26	NucDiff_v2.0	SO:0000159	35582	35582	.	.	.	ID=SV_19;Name=collapsed_tandem_repeat;del_len=100;query_dir=1;ref_sequence=CP007712.1;ref_coord=2895142-2895241;query_repeated_region_1=35477-35582;query_repeated_region_2=35578-35582;color=#0000EE
+26	NucDiff_v2.0	SO:0001874	49348	49468	.	.	.	ID=SV_20;Name=relocation-insertion;ins_len=121;ref_sequence=CP007712.1;blk_1_query=1-49347;blk_1_ref=2859562-2909006;blk_1_query_len=49347;blk_1_ref_len=49445;blk_1_st_query=1;blk_1_st_ref=2859562;blk_1_end_query=49347;blk_1_end_ref=2909006;blk_2_query=49469-56326;blk_2_ref=258747-265603;blk_2_query_len=6858;blk_2_ref_len=6857;blk_2_st_query=49469;blk_2_st_ref=265603;blk_2_end_query=56326;blk_2_end_ref=258747;color=#990099
+##sequence-region	27	1	54762
+27	NucDiff_v2.0	SO:0000159	4187	4187	.	.	.	ID=SV_21;Name=collapsed_tandem_repeat;del_len=513;query_dir=-1;ref_sequence=CP007712.1;ref_coord=50583-51095;query_repeated_region_1=3610-4187;query_repeated_region_2=4123-4187;color=#0000EE
+##sequence-region	32	1	41237
+32	NucDiff_v2.0	SO:0000667	1	35	.	.	.	ID=SV_22;Name=unaligned_beginning;ins_len=35;query_dir=1;ref_sequence=CP007712.1;ref_coord=2857209;color=#EE0000
+##sequence-region	34	1	38574
+34	NucDiff_v2.0	SO:0000001	1	38574	.	.	.	ID=SV_23;Name=unaligned_sequence;color=#990000
+##sequence-region	36	1	35496
+36	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_24;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3229772;color=#EE0000
+36	NucDiff_v2.0	SO:1000002	3411	3458	.	.	.	ID=SV_25;Name=substitution;subst_len=48;query_dir=1;ref_sequence=CP007712.1;ref_coord=3233175-3233222;color=#42C042
+36	NucDiff_v2.0	SO:0000159	3458	3458	.	.	.	ID=SV_26;Name=deletion;del_len=1030;query_dir=1;ref_sequence=CP007712.1;ref_coord=3233223-3234252;color=#0000EE
+##sequence-region	37	1	35150
+37	NucDiff_v2.0	SO:0000001	1	35150	.	.	.	ID=SV_27;Name=unaligned_sequence;color=#990000
+##sequence-region	43	1	30762
+43	NucDiff_v2.0	SO:0000667	1	22933	.	.	.	ID=SV_28;Name=unaligned_beginning;ins_len=22933;query_dir=1;ref_sequence=CP007712.1;ref_coord=3103595;color=#EE0000
+43	NucDiff_v2.0	SO:0001874	23240	23857	.	.	.	ID=SV_29;Name=relocation-insertion;ins_len=618;ref_sequence=CP007712.1;blk_1_query=22934-23239;blk_1_ref=3103596-3103901;blk_1_query_len=306;blk_1_ref_len=306;blk_1_st_query=22934;blk_1_st_ref=3103596;blk_1_end_query=23239;blk_1_end_ref=3103901;blk_2_query=23858-24113;blk_2_ref=2939880-2940135;blk_2_query_len=256;blk_2_ref_len=256;blk_2_st_query=23858;blk_2_st_ref=2940135;blk_2_end_query=24113;blk_2_end_ref=2939880;color=#990099
+43	NucDiff_v2.0	SO:0001874	23906	24113	.	.	.	ID=SV_30;Name=relocation-overlap;overlap_len=208;ref_sequence=CP007712.1;blk_1_query=23858-24113;blk_1_ref=2939880-2940135;blk_1_query_len=256;blk_1_ref_len=256;blk_1_st_query=23858;blk_1_st_ref=2940135;blk_1_end_query=24113;blk_1_end_ref=2939880;blk_2_query=23906-24898;blk_2_ref=3233223-3234215;blk_2_query_len=993;blk_2_ref_len=993;blk_2_st_query=23906;blk_2_st_ref=3233223;blk_2_end_query=24898;blk_2_end_ref=3234215;color=#990099
+43	NucDiff_v2.0	SO:0001874	24899	25555	.	.	.	ID=SV_31;Name=relocation-insertion;ins_len=657;ref_sequence=CP007712.1;blk_1_query=23906-24898;blk_1_ref=3233223-3234215;blk_1_query_len=993;blk_1_ref_len=993;blk_1_st_query=23906;blk_1_st_ref=3233223;blk_1_end_query=24898;blk_1_end_ref=3234215;blk_2_query=25556-27171;blk_2_ref=2941080-2942694;blk_2_query_len=1616;blk_2_ref_len=1615;blk_2_st_query=25556;blk_2_st_ref=2941080;blk_2_end_query=27171;blk_2_end_ref=2942694;color=#990099
+43	NucDiff_v2.0	SO:0001874	26066	27171	.	.	.	ID=SV_32;Name=relocation-overlap;overlap_len=1106;ref_sequence=CP007712.1;blk_1_query=25556-27171;blk_1_ref=2941080-2942694;blk_1_query_len=1616;blk_1_ref_len=1615;blk_1_st_query=25556;blk_1_st_ref=2941080;blk_1_end_query=27171;blk_1_end_ref=2942694;blk_2_query=26066-27465;blk_2_ref=2817906-2819305;blk_2_query_len=1400;blk_2_ref_len=1400;blk_2_st_query=26066;blk_2_st_ref=2817906;blk_2_end_query=27465;blk_2_end_ref=2819305;color=#990099
+43	NucDiff_v2.0	SO:0000667	27466	30762	.	.	.	ID=SV_33;Name=unaligned_end;ins_len=3297;query_dir=1;ref_sequence=CP007712.1;ref_coord=2819305;color=#EE0000
+##sequence-region	44	1	30167
+44	NucDiff_v2.0	SO:0000159	3489	3489	.	.	.	ID=SV_34;Name=deletion;del_len=1318;query_dir=1;ref_sequence=CP007712.1;ref_coord=1755768-1757085;color=#0000EE
+44	NucDiff_v2.0	SO:0000159	3489	3489	.	.	.	ID=SV_35;Name=collapsed_repeat;del_len=9;query_dir=1;ref_sequence=CP007712.1;ref_coord=1757086-1757094;query_repeated_region=3482-3489;color=#0000EE
+44	NucDiff_v2.0	SO:0000159	26493	26493	.	.	.	ID=SV_36;Name=deletion;del_len=1318;query_dir=1;ref_sequence=CP007712.1;ref_coord=1780099-1781416;color=#0000EE
+44	NucDiff_v2.0	SO:0000159	26493	26493	.	.	.	ID=SV_37;Name=collapsed_repeat;del_len=8;query_dir=1;ref_sequence=CP007712.1;ref_coord=1781417-1781424;query_repeated_region=26486-26493;color=#0000EE
+##sequence-region	46	1	29989
+46	NucDiff_v2.0	SO:0000159	29308	29308	.	.	.	ID=SV_38;Name=deletion;del_len=1318;query_dir=1;ref_sequence=CP007712.1;ref_coord=1988396-1989713;color=#0000EE
+46	NucDiff_v2.0	SO:0000159	29308	29308	.	.	.	ID=SV_39;Name=collapsed_repeat;del_len=8;query_dir=1;ref_sequence=CP007712.1;ref_coord=1989714-1989721;query_repeated_region=29301-29308;color=#0000EE
+46	NucDiff_v2.0	SO:0000667	29989	29989	.	.	.	ID=SV_40;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1990404;color=#EE0000
+##sequence-region	52	1	23263
+52	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_41;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3436798;color=#EE0000
+52	NucDiff_v2.0	SO:0000667	700	23263	.	.	.	ID=SV_42;Name=unaligned_end;ins_len=22564;query_dir=1;ref_sequence=CP007712.1;ref_coord=3437496;color=#EE0000
+##sequence-region	54	1	22672
+54	NucDiff_v2.0	SO:0000001	1	22672	.	.	.	ID=SV_43;Name=unaligned_sequence;color=#990000
+##sequence-region	55	1	21475
+55	NucDiff_v2.0	SO:0000001	1	21475	.	.	.	ID=SV_44;Name=unaligned_sequence;color=#990000
+##sequence-region	56	1	20297
+56	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_45;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2821957;color=#EE0000
+56	NucDiff_v2.0	SO:1000002	294	3903	.	.	.	ID=SV_46;Name=substitution;subst_len=3610;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2818050-2821659;color=#42C042
+56	NucDiff_v2.0	SO:0000159	3903	3903	.	.	.	ID=SV_47;Name=deletion;del_len=3706;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2814344-2818049;color=#0000EE
+56	NucDiff_v2.0	SO:1000002	4223	5025	.	.	.	ID=SV_48;Name=substitution;subst_len=803;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2813222-2814024;color=#42C042
+56	NucDiff_v2.0	SO:0000159	5025	5025	.	.	.	ID=SV_49;Name=deletion;del_len=529;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2812693-2813221;color=#0000EE
+56	NucDiff_v2.0	SO:1000002	8148	8722	.	.	.	ID=SV_50;Name=substitution;subst_len=575;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2808997-2809571;color=#42C042
+56	NucDiff_v2.0	SO:0000667	8723	8743	.	.	.	ID=SV_51;Name=insertion;ins_len=21;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2808996;color=#EE0000
+56	NucDiff_v2.0	SO:1000002	9803	9830	.	.	.	ID=SV_52;Name=substitution;subst_len=28;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2807910-2807937;color=#42C042
+56	NucDiff_v2.0	SO:0000159	9830	9830	.	.	.	ID=SV_53;Name=deletion;del_len=1204;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2806706-2807909;color=#0000EE
+56	NucDiff_v2.0	SO:0001874	10515	16845	.	.	.	ID=SV_54;Name=relocation-insertion;ins_len=6331;ref_sequence=CP007712.1;blk_1_query=2-10514;blk_1_ref=2806022-2821957;blk_1_query_len=10513;blk_1_ref_len=15936;blk_1_st_query=2;blk_1_st_ref=2821957;blk_1_end_query=10514;blk_1_end_ref=2806022;blk_2_query=16846-17508;blk_2_ref=3102926-3103589;blk_2_query_len=663;blk_2_ref_len=664;blk_2_st_query=16846;blk_2_st_ref=3103589;blk_2_end_query=17508;blk_2_end_ref=3102926;color=#990099
+56	NucDiff_v2.0	SO:0000667	17509	20297	.	.	.	ID=SV_55;Name=unaligned_end;ins_len=2789;query_dir=1;ref_sequence=CP007712.1;ref_coord=3102925;color=#EE0000
+##sequence-region	57	1	19865
+57	NucDiff_v2.0	SO:0000667	1	7	.	.	.	ID=SV_56;Name=unaligned_beginning;ins_len=7;query_dir=1;ref_sequence=CP007712.1;ref_coord=1135834;color=#EE0000
+57	NucDiff_v2.0	SO:0001874	3460	15162	.	.	.	ID=SV_57;Name=relocation-insertion;ins_len=11703;ref_sequence=CP007712.1;blk_1_query=8-3459;blk_1_ref=1132386-1135834;blk_1_query_len=3452;blk_1_ref_len=3449;blk_1_st_query=8;blk_1_st_ref=1135834;blk_1_end_query=3459;blk_1_end_ref=1132386;blk_2_query=15163-19863;blk_2_ref=1106889-1111582;blk_2_query_len=4701;blk_2_ref_len=4694;blk_2_st_query=15163;blk_2_st_ref=1111582;blk_2_end_query=19863;blk_2_end_ref=1106889;color=#990099
+57	NucDiff_v2.0	SO:1000002	15412	15722	.	.	.	ID=SV_58;Name=substitution;subst_len=311;query_dir=-1;ref_sequence=CP007712.1;ref_coord=1111023-1111333;color=#42C042
+57	NucDiff_v2.0	SO:0000667	15723	15731	.	.	.	ID=SV_59;Name=insertion;ins_len=9;query_dir=-1;ref_sequence=CP007712.1;ref_coord=1111022;color=#EE0000
+57	NucDiff_v2.0	SO:0000667	19864	19865	.	.	.	ID=SV_60;Name=unaligned_end;ins_len=2;query_dir=1;ref_sequence=CP007712.1;ref_coord=1106888;color=#EE0000
+##sequence-region	58	1	19367
+58	NucDiff_v2.0	SO:0000667	1	7773	.	.	.	ID=SV_61;Name=unaligned_beginning;ins_len=7773;query_dir=1;ref_sequence=CP007712.1;ref_coord=210390;color=#EE0000
+58	NucDiff_v2.0	SO:0000667	8305	19367	.	.	.	ID=SV_62;Name=unaligned_end;ins_len=11063;query_dir=1;ref_sequence=CP007712.1;ref_coord=209859;color=#EE0000
+##sequence-region	61	1	16978
+61	NucDiff_v2.0	SO:0000001	1	16978	.	.	.	ID=SV_63;Name=unaligned_sequence;color=#990000
+##sequence-region	62	1	16005
+62	NucDiff_v2.0	SO:0000001	1	16005	.	.	.	ID=SV_64;Name=unaligned_sequence;color=#990000
+##sequence-region	66	1	14720
+66	NucDiff_v2.0	SO:0000001	1	14720	.	.	.	ID=SV_65;Name=unaligned_sequence;color=#990000
+##sequence-region	68	1	14456
+68	NucDiff_v2.0	SO:0000667	1	2617	.	.	.	ID=SV_66;Name=unaligned_beginning;ins_len=2617;query_dir=1;ref_sequence=CP007712.1;ref_coord=11141;color=#EE0000
+68	NucDiff_v2.0	SO:0000667	3167	14456	.	.	.	ID=SV_67;Name=unaligned_end;ins_len=11290;query_dir=1;ref_sequence=CP007712.1;ref_coord=10591;color=#EE0000
+##sequence-region	71	1	13816
+71	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_68;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3602539;color=#EE0000
+71	NucDiff_v2.0	SO:0000667	117	13816	.	.	.	ID=SV_69;Name=unaligned_end;ins_len=13700;query_dir=1;ref_sequence=CP007712.1;ref_coord=3602425;color=#EE0000
+##sequence-region	72	1	13409
+72	NucDiff_v2.0	SO:0000001	1	13409	.	.	.	ID=SV_70;Name=unaligned_sequence;color=#990000
+##sequence-region	75	1	12685
+75	NucDiff_v2.0	SO:0000001	1	12685	.	.	.	ID=SV_71;Name=unaligned_sequence;color=#990000
+##sequence-region	77	1	12362
+77	NucDiff_v2.0	SO:0000001	1	12362	.	.	.	ID=SV_72;Name=unaligned_sequence;color=#990000
+##sequence-region	78	1	11104
+78	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_73;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2778878;color=#EE0000
+78	NucDiff_v2.0	SO:1000002	115	523	.	.	.	ID=SV_74;Name=substitution;subst_len=409;query_dir=1;ref_sequence=CP007712.1;ref_coord=2778992-2779400;color=#42C042
+78	NucDiff_v2.0	SO:0000667	524	3322	.	.	.	ID=SV_75;Name=insertion;ins_len=2799;query_dir=1;ref_sequence=CP007712.1;ref_coord=2779400;color=#EE0000
+78	NucDiff_v2.0	SO:1000002	3938	4874	.	.	.	ID=SV_76;Name=substitution;subst_len=937;query_dir=1;ref_sequence=CP007712.1;ref_coord=2780016-2780952;color=#42C042
+78	NucDiff_v2.0	SO:0000667	4875	4892	.	.	.	ID=SV_77;Name=insertion;ins_len=18;query_dir=1;ref_sequence=CP007712.1;ref_coord=2780952;color=#EE0000
+78	NucDiff_v2.0	SO:1000002	5744	8976	.	.	.	ID=SV_78;Name=substitution;subst_len=3233;query_dir=1;ref_sequence=CP007712.1;ref_coord=2781803-2785035;color=#42C042
+78	NucDiff_v2.0	SO:0000159	8976	8976	.	.	.	ID=SV_79;Name=deletion;del_len=2146;query_dir=1;ref_sequence=CP007712.1;ref_coord=2785036-2787181;color=#0000EE
+78	NucDiff_v2.0	SO:0000667	9278	11104	.	.	.	ID=SV_80;Name=unaligned_end;ins_len=1827;query_dir=1;ref_sequence=CP007712.1;ref_coord=2787482;color=#EE0000
+##sequence-region	79	1	11010
+79	NucDiff_v2.0	SO:0000001	1	11010	.	.	.	ID=SV_81;Name=unaligned_sequence;color=#990000
+##sequence-region	80	1	10102
+80	NucDiff_v2.0	SO:0000001	1	10102	.	.	.	ID=SV_82;Name=unaligned_sequence;color=#990000
+##sequence-region	82	1	10017
+82	NucDiff_v2.0	SO:0000667	1	890	.	.	.	ID=SV_83;Name=unaligned_beginning;ins_len=890;query_dir=1;ref_sequence=CP007712.1;ref_coord=1469832;color=#EE0000
+82	NucDiff_v2.0	SO:0000667	2081	10017	.	.	.	ID=SV_84;Name=unaligned_end;ins_len=7937;query_dir=1;ref_sequence=CP007712.1;ref_coord=1471021;color=#EE0000
+##sequence-region	83	1	9870
+83	NucDiff_v2.0	SO:0000667	1	9392	.	.	.	ID=SV_85;Name=unaligned_beginning;ins_len=9392;query_dir=1;ref_sequence=CP007712.1;ref_coord=2051264;color=#EE0000
+83	NucDiff_v2.0	SO:0000667	9870	9870	.	.	.	ID=SV_86;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2050787;color=#EE0000
+##sequence-region	84	1	9829
+84	NucDiff_v2.0	SO:0000001	1	9829	.	.	.	ID=SV_87;Name=unaligned_sequence;color=#990000
+##sequence-region	85	1	9764
+85	NucDiff_v2.0	SO:0000001	1	9764	.	.	.	ID=SV_88;Name=unaligned_sequence;color=#990000
+##sequence-region	86	1	9656
+86	NucDiff_v2.0	SO:0000667	1	7161	.	.	.	ID=SV_89;Name=unaligned_beginning;ins_len=7161;query_dir=1;ref_sequence=CP007712.1;ref_coord=1726343;color=#EE0000
+86	NucDiff_v2.0	SO:0000667	9215	9656	.	.	.	ID=SV_90;Name=unaligned_end;ins_len=442;query_dir=1;ref_sequence=CP007712.1;ref_coord=1724290;color=#EE0000
+##sequence-region	87	1	9296
+87	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_91;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3749786;color=#EE0000
+87	NucDiff_v2.0	SO:0000667	9296	9296	.	.	.	ID=SV_92;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3759081;color=#EE0000
+##sequence-region	89	1	8773
+89	NucDiff_v2.0	SO:0000667	1	1835	.	.	.	ID=SV_93;Name=unaligned_beginning;ins_len=1835;query_dir=1;ref_sequence=CP007712.1;ref_coord=2106603;color=#EE0000
+89	NucDiff_v2.0	SO:0001874	2314	2638	.	.	.	ID=SV_94;Name=relocation-overlap;overlap_len=325;ref_sequence=CP007712.1;blk_1_query=1836-2638;blk_1_ref=2105798-2106603;blk_1_query_len=803;blk_1_ref_len=806;blk_1_st_query=1836;blk_1_st_ref=2106603;blk_1_end_query=2638;blk_1_end_ref=2105798;blk_2_query=2314-2679;blk_2_ref=3203188-3203558;blk_2_query_len=366;blk_2_ref_len=371;blk_2_st_query=2314;blk_2_st_ref=3203558;blk_2_end_query=2679;blk_2_end_ref=3203188;color=#990099
+89	NucDiff_v2.0	SO:0001874	2652	2679	.	.	.	ID=SV_95;Name=relocation-overlap;overlap_len=28;ref_sequence=CP007712.1;blk_1_query=2314-2679;blk_1_ref=3203188-3203558;blk_1_query_len=366;blk_1_ref_len=371;blk_1_st_query=2314;blk_1_st_ref=3203558;blk_1_end_query=2679;blk_1_end_ref=3203188;blk_2_query=2652-2904;blk_2_ref=3396229-3396484;blk_2_query_len=253;blk_2_ref_len=256;blk_2_st_query=2652;blk_2_st_ref=3396484;blk_2_end_query=2904;blk_2_end_ref=3396229;color=#990099
+89	NucDiff_v2.0	SO:0001874	2746	2904	.	.	.	ID=SV_96;Name=relocation-overlap;overlap_len=159;ref_sequence=CP007712.1;blk_1_query=2652-2904;blk_1_ref=3396229-3396484;blk_1_query_len=253;blk_1_ref_len=256;blk_1_st_query=2652;blk_1_st_ref=3396484;blk_1_end_query=2904;blk_1_end_ref=3396229;blk_2_query=2746-2914;blk_2_ref=2105502-2105670;blk_2_query_len=169;blk_2_ref_len=169;blk_2_st_query=2746;blk_2_st_ref=2105670;blk_2_end_query=2914;blk_2_end_ref=2105502;color=#990099
+89	NucDiff_v2.0	SO:0000667	2915	8773	.	.	.	ID=SV_97;Name=unaligned_end;ins_len=5859;query_dir=1;ref_sequence=CP007712.1;ref_coord=2105501;color=#EE0000
+##sequence-region	91	1	7611
+91	NucDiff_v2.0	SO:0000001	1	7611	.	.	.	ID=SV_98;Name=unaligned_sequence;color=#990000
+##sequence-region	92	1	7581
+92	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_99;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=507105;color=#EE0000
+92	NucDiff_v2.0	SO:0000667	7581	7581	.	.	.	ID=SV_100;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=499527;color=#EE0000
+##sequence-region	93	1	7218
+93	NucDiff_v2.0	SO:0000667	1	1733	.	.	.	ID=SV_101;Name=unaligned_beginning;ins_len=1733;query_dir=1;ref_sequence=CP007712.1;ref_coord=2779000;color=#EE0000
+93	NucDiff_v2.0	SO:1000002	2584	3366	.	.	.	ID=SV_102;Name=substitution;subst_len=783;query_dir=1;ref_sequence=CP007712.1;ref_coord=2779851-2780633;color=#42C042
+93	NucDiff_v2.0	SO:0000159	3366	3366	.	.	.	ID=SV_103;Name=deletion;del_len=318;query_dir=1;ref_sequence=CP007712.1;ref_coord=2780634-2780951;color=#0000EE
+93	NucDiff_v2.0	SO:0000667	4219	7218	.	.	.	ID=SV_104;Name=unaligned_end;ins_len=3000;query_dir=1;ref_sequence=CP007712.1;ref_coord=2781802;color=#EE0000
+##sequence-region	94	1	7178
+94	NucDiff_v2.0	SO:0000667	1	549	.	.	.	ID=SV_105;Name=unaligned_beginning;ins_len=549;query_dir=1;ref_sequence=CP007712.1;ref_coord=3101788;color=#EE0000
+94	NucDiff_v2.0	SO:1000002	949	5528	.	.	.	ID=SV_106;Name=substitution;subst_len=4580;query_dir=-1;ref_sequence=CP007712.1;ref_coord=3096810-3101389;color=#42C042
+94	NucDiff_v2.0	SO:0000159	5528	5528	.	.	.	ID=SV_107;Name=deletion;del_len=477;query_dir=-1;ref_sequence=CP007712.1;ref_coord=3096333-3096809;color=#0000EE
+94	NucDiff_v2.0	SO:0001874	5702	6068	.	.	.	ID=SV_108;Name=relocation-insertion;ins_len=367;ref_sequence=CP007712.1;blk_1_query=550-5701;blk_1_ref=3096160-3101788;blk_1_query_len=5152;blk_1_ref_len=5629;blk_1_st_query=550;blk_1_st_ref=3101788;blk_1_end_query=5701;blk_1_end_ref=3096160;blk_2_query=6069-6998;blk_2_ref=2789224-2790229;blk_2_query_len=930;blk_2_ref_len=1006;blk_2_st_query=6069;blk_2_st_ref=2790229;blk_2_end_query=6998;blk_2_end_ref=2789224;color=#990099
+94	NucDiff_v2.0	SO:1000002	6444	6766	.	.	.	ID=SV_109;Name=substitution;subst_len=323;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2789532-2789854;color=#42C042
+94	NucDiff_v2.0	SO:0000159	6766	6766	.	.	.	ID=SV_110;Name=deletion;del_len=76;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2789456-2789531;color=#0000EE
+94	NucDiff_v2.0	SO:0000667	6999	7178	.	.	.	ID=SV_111;Name=unaligned_end;ins_len=180;query_dir=1;ref_sequence=CP007712.1;ref_coord=2789223;color=#EE0000
+##sequence-region	95	1	7149
+95	NucDiff_v2.0	SO:0000667	1	4374	.	.	.	ID=SV_112;Name=unaligned_beginning;ins_len=4374;query_dir=1;ref_sequence=CP007712.1;ref_coord=60729;color=#EE0000
+95	NucDiff_v2.0	SO:0001874	4900	5397	.	.	.	ID=SV_113;Name=relocation-overlap;overlap_len=498;ref_sequence=CP007712.1;blk_1_query=4375-5397;blk_1_ref=60730-61753;blk_1_query_len=1023;blk_1_ref_len=1024;blk_1_st_query=4375;blk_1_st_ref=60730;blk_1_end_query=5397;blk_1_end_ref=61753;blk_2_query=4900-5402;blk_2_ref=2105624-2106125;blk_2_query_len=503;blk_2_ref_len=502;blk_2_st_query=4900;blk_2_st_ref=2106125;blk_2_end_query=5402;blk_2_end_ref=2105624;color=#990099
+95	NucDiff_v2.0	SO:0001874	5403	5997	.	.	.	ID=SV_114;Name=relocation-insertion;ins_len=595;ref_sequence=CP007712.1;blk_1_query=4900-5402;blk_1_ref=2105624-2106125;blk_1_query_len=503;blk_1_ref_len=502;blk_1_st_query=4900;blk_1_st_ref=2106125;blk_1_end_query=5402;blk_1_end_ref=2105624;blk_2_query=5998-7145;blk_2_ref=487861-489008;blk_2_query_len=1148;blk_2_ref_len=1148;blk_2_st_query=5998;blk_2_st_ref=487861;blk_2_end_query=7145;blk_2_end_ref=489008;color=#990099
+95	NucDiff_v2.0	SO:0000667	7146	7149	.	.	.	ID=SV_115;Name=unaligned_end;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=489008;color=#EE0000
+##sequence-region	96	1	6638
+96	NucDiff_v2.0	SO:0000001	1	6638	.	.	.	ID=SV_116;Name=unaligned_sequence;color=#990000
+##sequence-region	98	1	6207
+98	NucDiff_v2.0	SO:0000667	1	1160	.	.	.	ID=SV_117;Name=unaligned_beginning;ins_len=1160;query_dir=1;ref_sequence=CP007712.1;ref_coord=2106603;color=#EE0000
+98	NucDiff_v2.0	SO:0001874	2246	5482	.	.	.	ID=SV_118;Name=relocation-insertion;ins_len=3237;ref_sequence=CP007712.1;blk_1_query=1161-2245;blk_1_ref=2105519-2106603;blk_1_query_len=1085;blk_1_ref_len=1085;blk_1_st_query=1161;blk_1_st_ref=2106603;blk_1_end_query=2245;blk_1_end_ref=2105519;blk_2_query=5483-6206;blk_2_ref=3485260-3485985;blk_2_query_len=724;blk_2_ref_len=726;blk_2_st_query=5483;blk_2_st_ref=3485985;blk_2_end_query=6206;blk_2_end_ref=3485260;color=#990099
+98	NucDiff_v2.0	SO:0000667	6207	6207	.	.	.	ID=SV_119;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3485259;color=#EE0000
+##sequence-region	99	1	6078
+99	NucDiff_v2.0	SO:0000001	1	6078	.	.	.	ID=SV_120;Name=unaligned_sequence;color=#990000
+##sequence-region	100	1	5966
+100	NucDiff_v2.0	SO:0000667	1	4192	.	.	.	ID=SV_121;Name=unaligned_beginning;ins_len=4192;query_dir=1;ref_sequence=CP007712.1;ref_coord=1082777;color=#EE0000
+100	NucDiff_v2.0	SO:0000667	5233	5966	.	.	.	ID=SV_122;Name=unaligned_end;ins_len=734;query_dir=1;ref_sequence=CP007712.1;ref_coord=1083817;color=#EE0000
+##sequence-region	101	1	5869
+101	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_123;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1059814;color=#EE0000
+101	NucDiff_v2.0	SO:0000667	2574	5869	.	.	.	ID=SV_124;Name=unaligned_end;ins_len=3296;query_dir=1;ref_sequence=CP007712.1;ref_coord=1057242;color=#EE0000
+##sequence-region	102	1	5694
+102	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_125;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3016885;color=#EE0000
+102	NucDiff_v2.0	SO:1000002	418	3634	.	.	.	ID=SV_126;Name=substitution;subst_len=3217;query_dir=1;ref_sequence=CP007712.1;ref_coord=3017302-3020518;color=#42C042
+102	NucDiff_v2.0	SO:0000667	3635	5564	.	.	.	ID=SV_127;Name=insertion;ins_len=1930;query_dir=1;ref_sequence=CP007712.1;ref_coord=3020518;color=#EE0000
+##sequence-region	103	1	5599
+103	NucDiff_v2.0	SO:0000001	1	5599	.	.	.	ID=SV_128;Name=unaligned_sequence;color=#990000
+##sequence-region	104	1	5486
+104	NucDiff_v2.0	SO:0000001	1	5486	.	.	.	ID=SV_129;Name=unaligned_sequence;color=#990000
+##sequence-region	107	1	5133
+107	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_130;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=122654;color=#EE0000
+107	NucDiff_v2.0	SO:0000667	5053	5133	.	.	.	ID=SV_131;Name=unaligned_end;ins_len=81;query_dir=1;ref_sequence=CP007712.1;ref_coord=117606;color=#EE0000
+##sequence-region	108	1	5116
+108	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_132;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=223161;color=#EE0000
+##sequence-region	109	1	5059
+109	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_133;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=74369;color=#EE0000
+109	NucDiff_v2.0	SO:1000002	4026	4084	.	.	.	ID=SV_134;Name=substitution;subst_len=59;query_dir=1;ref_sequence=CP007712.1;ref_coord=78400-78458;color=#42C042
+109	NucDiff_v2.0	SO:0000667	4085	4875	.	.	.	ID=SV_135;Name=insertion;ins_len=791;query_dir=1;ref_sequence=CP007712.1;ref_coord=78458;color=#EE0000
+109	NucDiff_v2.0	SO:0000667	5059	5059	.	.	.	ID=SV_136;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=78641;color=#EE0000
+##sequence-region	110	1	4852
+110	NucDiff_v2.0	SO:0000667	1	2216	.	.	.	ID=SV_137;Name=unaligned_beginning;ins_len=2216;query_dir=1;ref_sequence=CP007712.1;ref_coord=3347797;color=#EE0000
+110	NucDiff_v2.0	SO:0000667	4852	4852	.	.	.	ID=SV_138;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3350431;color=#EE0000
+##sequence-region	111	1	4846
+111	NucDiff_v2.0	SO:0000667	1	29	.	.	.	ID=SV_139;Name=unaligned_beginning;ins_len=29;query_dir=1;ref_sequence=CP007712.1;ref_coord=2727686;color=#EE0000
+##sequence-region	112	1	4802
+112	NucDiff_v2.0	SO:0000001	1	4802	.	.	.	ID=SV_140;Name=unaligned_sequence;color=#990000
+##sequence-region	113	1	4778
+113	NucDiff_v2.0	SO:0000667	1	4	.	.	.	ID=SV_141;Name=unaligned_beginning;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=58123;color=#EE0000
+113	NucDiff_v2.0	SO:0000667	90	4778	.	.	.	ID=SV_142;Name=unaligned_end;ins_len=4689;query_dir=1;ref_sequence=CP007712.1;ref_coord=58038;color=#EE0000
+##sequence-region	114	1	4669
+114	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_143;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2648271;color=#EE0000
+114	NucDiff_v2.0	SO:1000002	1958	1965	.	.	.	ID=SV_144;Name=substitution;subst_len=8;query_dir=1;ref_sequence=CP007712.1;ref_coord=2650228-2650235;color=#42C042
+114	NucDiff_v2.0	SO:0000159	1965	1965	.	.	.	ID=SV_145;Name=deletion;del_len=1188;query_dir=1;ref_sequence=CP007712.1;ref_coord=2650236-2651423;color=#0000EE
+114	NucDiff_v2.0	SO:0000667	4669	4669	.	.	.	ID=SV_146;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2654116;color=#EE0000
+##sequence-region	115	1	4410
+115	NucDiff_v2.0	SO:0000001	1	4410	.	.	.	ID=SV_147;Name=unaligned_sequence;color=#990000
+##sequence-region	117	1	4193
+117	NucDiff_v2.0	SO:0000667	1	2762	.	.	.	ID=SV_148;Name=unaligned_beginning;ins_len=2762;query_dir=1;ref_sequence=CP007712.1;ref_coord=70;color=#EE0000
+117	NucDiff_v2.0	SO:0001874	2831	3767	.	.	.	ID=SV_149;Name=relocation-insertion;ins_len=937;ref_sequence=CP007712.1;blk_1_query=2763-2830;blk_1_ref=3-70;blk_1_query_len=68;blk_1_ref_len=68;blk_1_st_query=2763;blk_1_st_ref=70;blk_1_end_query=2830;blk_1_end_ref=3;blk_2_query=3768-4192;blk_2_ref=3913084-3913507;blk_2_query_len=425;blk_2_ref_len=424;blk_2_st_query=3768;blk_2_st_ref=3913507;blk_2_end_query=4192;blk_2_end_ref=3913084;color=#990099
+117	NucDiff_v2.0	SO:0000667	4193	4193	.	.	.	ID=SV_150;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3913083;color=#EE0000
+##sequence-region	118	1	3886
+118	NucDiff_v2.0	SO:0000001	1	3886	.	.	.	ID=SV_151;Name=unaligned_sequence;color=#990000
+##sequence-region	120	1	3694
+120	NucDiff_v2.0	SO:0000667	1	1868	.	.	.	ID=SV_152;Name=unaligned_beginning;ins_len=1868;query_dir=1;ref_sequence=CP007712.1;ref_coord=1350745;color=#EE0000
+120	NucDiff_v2.0	SO:0000667	3694	3694	.	.	.	ID=SV_153;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1352540;color=#EE0000
+##sequence-region	121	1	3594
+121	NucDiff_v2.0	SO:0000001	1	3594	.	.	.	ID=SV_154;Name=unaligned_sequence;color=#990000
+##sequence-region	122	1	3422
+122	NucDiff_v2.0	SO:0000667	1	3307	.	.	.	ID=SV_155;Name=unaligned_beginning;ins_len=3307;query_dir=1;ref_sequence=CP007712.1;ref_coord=312177;color=#EE0000
+##sequence-region	123	1	3354
+123	NucDiff_v2.0	SO:0000001	1	3354	.	.	.	ID=SV_156;Name=unaligned_sequence;color=#990000
+##sequence-region	124	1	3289
+124	NucDiff_v2.0	SO:0000667	1	560	.	.	.	ID=SV_157;Name=unaligned_beginning;ins_len=560;query_dir=1;ref_sequence=CP007712.1;ref_coord=3419612;color=#EE0000
+124	NucDiff_v2.0	SO:0001874	579	1034	.	.	.	ID=SV_158;Name=relocation-overlap;overlap_len=456;ref_sequence=CP007712.1;blk_1_query=561-1034;blk_1_ref=3419138-3419612;blk_1_query_len=474;blk_1_ref_len=475;blk_1_st_query=561;blk_1_st_ref=3419612;blk_1_end_query=1034;blk_1_end_ref=3419138;blk_2_query=579-1125;blk_2_ref=2718313-2718862;blk_2_query_len=547;blk_2_ref_len=550;blk_2_st_query=579;blk_2_st_ref=2718862;blk_2_end_query=1125;blk_2_end_ref=2718313;color=#990099
+124	NucDiff_v2.0	SO:0001874	1126	1214	.	.	.	ID=SV_159;Name=relocation-insertion;ins_len=89;ref_sequence=CP007712.1;blk_1_query=579-1125;blk_1_ref=2718313-2718862;blk_1_query_len=547;blk_1_ref_len=550;blk_1_st_query=579;blk_1_st_ref=2718862;blk_1_end_query=1125;blk_1_end_ref=2718313;blk_2_query=1215-1371;blk_2_ref=2105513-2105669;blk_2_query_len=157;blk_2_ref_len=157;blk_2_st_query=1215;blk_2_st_ref=2105669;blk_2_end_query=1371;blk_2_end_ref=2105513;color=#990099
+124	NucDiff_v2.0	SO:0000667	1372	3289	.	.	.	ID=SV_160;Name=unaligned_end;ins_len=1918;query_dir=1;ref_sequence=CP007712.1;ref_coord=2105512;color=#EE0000
+##sequence-region	125	1	3194
+125	NucDiff_v2.0	SO:0000667	1	2853	.	.	.	ID=SV_161;Name=unaligned_beginning;ins_len=2853;query_dir=1;ref_sequence=CP007712.1;ref_coord=3428881;color=#EE0000
+125	NucDiff_v2.0	SO:0000667	3191	3194	.	.	.	ID=SV_162;Name=unaligned_end;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=3429218;color=#EE0000
+##sequence-region	126	1	3178
+126	NucDiff_v2.0	SO:0000667	1	4	.	.	.	ID=SV_163;Name=unaligned_beginning;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=888934;color=#EE0000
+126	NucDiff_v2.0	SO:0000667	100	3178	.	.	.	ID=SV_164;Name=unaligned_end;ins_len=3079;query_dir=1;ref_sequence=CP007712.1;ref_coord=889029;color=#EE0000
+##sequence-region	127	1	3115
+127	NucDiff_v2.0	SO:0000667	1	4	.	.	.	ID=SV_165;Name=unaligned_beginning;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=1751998;color=#EE0000
+##sequence-region	128	1	3021
+128	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_166;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3501500;color=#EE0000
+128	NucDiff_v2.0	SO:0000667	1766	3021	.	.	.	ID=SV_167;Name=unaligned_end;ins_len=1256;query_dir=1;ref_sequence=CP007712.1;ref_coord=3503255;color=#EE0000
+##sequence-region	130	1	2883
+130	NucDiff_v2.0	SO:0000001	1	2883	.	.	.	ID=SV_168;Name=unaligned_sequence;color=#990000
+##sequence-region	131	1	2836
+131	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_169;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1091460;color=#EE0000
+131	NucDiff_v2.0	SO:1000002	135	1468	.	.	.	ID=SV_170;Name=substitution;subst_len=1334;query_dir=-1;ref_sequence=CP007712.1;ref_coord=1089994-1091327;color=#42C042
+131	NucDiff_v2.0	SO:0000667	1469	2720	.	.	.	ID=SV_171;Name=insertion;ins_len=1252;query_dir=-1;ref_sequence=CP007712.1;ref_coord=1089993;color=#EE0000
+##sequence-region	133	1	2730
+133	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_172;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2509805;color=#EE0000
+133	NucDiff_v2.0	SO:0000667	2188	2730	.	.	.	ID=SV_173;Name=unaligned_end;ins_len=543;query_dir=1;ref_sequence=CP007712.1;ref_coord=2511991;color=#EE0000
+##sequence-region	134	1	2628
+134	NucDiff_v2.0	SO:0000667	1	2441	.	.	.	ID=SV_174;Name=unaligned_beginning;ins_len=2441;query_dir=1;ref_sequence=CP007712.1;ref_coord=1312396;color=#EE0000
+134	NucDiff_v2.0	SO:0000667	2628	2628	.	.	.	ID=SV_175;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1312210;color=#EE0000
+##sequence-region	135	1	2559
+135	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_176;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=116852;color=#EE0000
+135	NucDiff_v2.0	SO:1000002	929	1053	.	.	.	ID=SV_177;Name=substitution;subst_len=125;query_dir=-1;ref_sequence=CP007712.1;ref_coord=115801-115925;color=#42C042
+135	NucDiff_v2.0	SO:0000159	1053	1053	.	.	.	ID=SV_178;Name=deletion;del_len=7;query_dir=-1;ref_sequence=CP007712.1;ref_coord=115794-115800;color=#0000EE
+135	NucDiff_v2.0	SO:0000667	2557	2559	.	.	.	ID=SV_179;Name=unaligned_end;ins_len=3;query_dir=1;ref_sequence=CP007712.1;ref_coord=114290;color=#EE0000
+##sequence-region	136	1	2555
+136	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_180;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1195201;color=#EE0000
+136	NucDiff_v2.0	SO:0000667	2056	2149	.	.	.	ID=SV_181;Name=insertion;ins_len=94;query_dir=-1;ref_sequence=CP007712.1;ref_coord=1193169;color=#EE0000
+136	NucDiff_v2.0	SO:0000159	2324	2324	.	.	.	ID=SV_182;Name=deletion;del_len=1320;query_dir=-1;ref_sequence=CP007712.1;ref_coord=1191675-1192994;color=#0000EE
+136	NucDiff_v2.0	SO:0000159	2324	2324	.	.	.	ID=SV_183;Name=collapsed_repeat;del_len=6;query_dir=-1;ref_sequence=CP007712.1;ref_coord=1191669-1191674;query_repeated_region=2319-2324;color=#0000EE
+136	NucDiff_v2.0	SO:0000667	2555	2555	.	.	.	ID=SV_184;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1191438;color=#EE0000
+##sequence-region	137	1	2542
+137	NucDiff_v2.0	SO:0000001	1	2542	.	.	.	ID=SV_185;Name=unaligned_sequence;color=#990000
+##sequence-region	138	1	2535
+138	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_186;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3234528;color=#EE0000
+138	NucDiff_v2.0	SO:0000667	267	809	.	.	.	ID=SV_187;Name=insertion;ins_len=543;query_dir=1;ref_sequence=CP007712.1;ref_coord=3234787;color=#EE0000
+138	NucDiff_v2.0	SO:1000035	810	812	.	.	.	ID=SV_188;Name=duplication;ins_len=3;query_dir=1;ref_sequence=CP007712.1;ref_coord=3234787;query_repeated_region=264-266;color=#EE0000
+138	NucDiff_v2.0	SO:0000667	2532	2535	.	.	.	ID=SV_189;Name=unaligned_end;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=3236510;color=#EE0000
+##sequence-region	139	1	2524
+139	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_190;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=103792;color=#EE0000
+139	NucDiff_v2.0	SO:0000667	2524	2524	.	.	.	ID=SV_191;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=101270;color=#EE0000
+##sequence-region	140	1	2467
+140	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_192;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3566285;color=#EE0000
+140	NucDiff_v2.0	SO:0000667	2467	2467	.	.	.	ID=SV_193;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3563820;color=#EE0000
+##sequence-region	142	1	2340
+142	NucDiff_v2.0	SO:0000001	1	2340	.	.	.	ID=SV_194;Name=unaligned_sequence;color=#990000
+##sequence-region	143	1	2337
+143	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_195;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1247139;color=#EE0000
+143	NucDiff_v2.0	SO:0000667	2326	2337	.	.	.	ID=SV_196;Name=unaligned_end;ins_len=12;query_dir=1;ref_sequence=CP007712.1;ref_coord=1244815;color=#EE0000
+##sequence-region	144	1	2318
+144	NucDiff_v2.0	SO:0000667	1	1451	.	.	.	ID=SV_197;Name=unaligned_beginning;ins_len=1451;query_dir=1;ref_sequence=CP007712.1;ref_coord=58347;color=#EE0000
+##sequence-region	145	1	2283
+145	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_198;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=493133;color=#EE0000
+145	NucDiff_v2.0	SO:0000667	2181	2283	.	.	.	ID=SV_199;Name=unaligned_end;ins_len=103;query_dir=1;ref_sequence=CP007712.1;ref_coord=490955;color=#EE0000
+##sequence-region	146	1	2277
+146	NucDiff_v2.0	SO:0000001	1	2277	.	.	.	ID=SV_200;Name=unaligned_sequence;color=#990000
+##sequence-region	147	1	2277
+147	NucDiff_v2.0	SO:0000667	2245	2277	.	.	.	ID=SV_201;Name=unaligned_end;ins_len=33;query_dir=1;ref_sequence=CP007712.1;ref_coord=2248605;color=#EE0000
+##sequence-region	148	1	2212
+148	NucDiff_v2.0	SO:0000667	2206	2212	.	.	.	ID=SV_202;Name=unaligned_end;ins_len=7;query_dir=1;ref_sequence=CP007712.1;ref_coord=3954354;color=#EE0000
+##sequence-region	149	1	2194
+149	NucDiff_v2.0	SO:0000667	1	789	.	.	.	ID=SV_203;Name=unaligned_beginning;ins_len=789;query_dir=1;ref_sequence=CP007712.1;ref_coord=3573783;color=#EE0000
+149	NucDiff_v2.0	SO:0000667	2191	2194	.	.	.	ID=SV_204;Name=unaligned_end;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=3575193;color=#EE0000
+##sequence-region	150	1	2182
+150	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_205;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1864799;color=#EE0000
+150	NucDiff_v2.0	SO:0000667	2182	2182	.	.	.	ID=SV_206;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1866980;color=#EE0000
+##sequence-region	151	1	2131
+151	NucDiff_v2.0	SO:0000001	1	2131	.	.	.	ID=SV_207;Name=unaligned_sequence;color=#990000
+##sequence-region	152	1	2122
+152	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_208;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2647433;color=#EE0000
+152	NucDiff_v2.0	SO:0000667	2122	2122	.	.	.	ID=SV_209;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2645313;color=#EE0000
+##sequence-region	153	1	2026
+153	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_210;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=28199;color=#EE0000
+153	NucDiff_v2.0	SO:0000667	2026	2026	.	.	.	ID=SV_211;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=26175;color=#EE0000
+##sequence-region	154	1	1923
+154	NucDiff_v2.0	SO:0000667	1	1595	.	.	.	ID=SV_212;Name=unaligned_beginning;ins_len=1595;query_dir=1;ref_sequence=CP007712.1;ref_coord=1616520;color=#EE0000
+##sequence-region	155	1	1888
+155	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_213;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=899843;color=#EE0000
+155	NucDiff_v2.0	SO:0000667	1888	1888	.	.	.	ID=SV_214;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=897940;color=#EE0000
+##sequence-region	157	1	1807
+157	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_215;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3479324;color=#EE0000
+157	NucDiff_v2.0	SO:0000667	1807	1807	.	.	.	ID=SV_216;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3481129;color=#EE0000
+##sequence-region	158	1	1801
+158	NucDiff_v2.0	SO:0000001	1	1801	.	.	.	ID=SV_217;Name=unaligned_sequence;color=#990000
+##sequence-region	159	1	1796
+159	NucDiff_v2.0	SO:0000667	1	2	.	.	.	ID=SV_218;Name=unaligned_beginning;ins_len=2;query_dir=1;ref_sequence=CP007712.1;ref_coord=2307541;color=#EE0000
+159	NucDiff_v2.0	SO:1000002	1160	1446	.	.	.	ID=SV_219;Name=substitution;subst_len=287;query_dir=1;ref_sequence=CP007712.1;ref_coord=2308681-2308967;color=#42C042
+159	NucDiff_v2.0	SO:0000667	1793	1796	.	.	.	ID=SV_220;Name=unaligned_end;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=2309314;color=#EE0000
+##sequence-region	160	1	1792
+160	NucDiff_v2.0	SO:0000667	1	7	.	.	.	ID=SV_221;Name=unaligned_beginning;ins_len=7;query_dir=1;ref_sequence=CP007712.1;ref_coord=43544;color=#EE0000
+160	NucDiff_v2.0	SO:0000667	1792	1792	.	.	.	ID=SV_222;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=41760;color=#EE0000
+##sequence-region	161	1	1776
+161	NucDiff_v2.0	SO:0000001	1	1776	.	.	.	ID=SV_223;Name=unaligned_sequence;color=#990000
+##sequence-region	162	1	1679
+162	NucDiff_v2.0	SO:0000001	1	1679	.	.	.	ID=SV_224;Name=unaligned_sequence;color=#990000
+##sequence-region	163	1	1624
+163	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_225;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3594215;color=#EE0000
+163	NucDiff_v2.0	SO:0000667	312	1624	.	.	.	ID=SV_226;Name=unaligned_end;ins_len=1313;query_dir=1;ref_sequence=CP007712.1;ref_coord=3593905;color=#EE0000
+##sequence-region	164	1	1618
+164	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_227;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3222730;color=#EE0000
+164	NucDiff_v2.0	SO:0000667	1618	1618	.	.	.	ID=SV_228;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3221112;color=#EE0000
+##sequence-region	165	1	1613
+165	NucDiff_v2.0	SO:0000001	1	1613	.	.	.	ID=SV_229;Name=unaligned_sequence;color=#990000
+##sequence-region	166	1	1607
+166	NucDiff_v2.0	SO:0000001	1	1607	.	.	.	ID=SV_230;Name=unaligned_sequence;color=#990000
+##sequence-region	168	1	1580
+168	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_231;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3396185;color=#EE0000
+168	NucDiff_v2.0	SO:0000667	144	1580	.	.	.	ID=SV_232;Name=unaligned_end;ins_len=1437;query_dir=1;ref_sequence=CP007712.1;ref_coord=3396325;color=#EE0000
+##sequence-region	170	1	1528
+170	NucDiff_v2.0	SO:0000001	1	1528	.	.	.	ID=SV_233;Name=unaligned_sequence;color=#990000
+##sequence-region	171	1	1491
+171	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_234;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3092355;color=#EE0000
+171	NucDiff_v2.0	SO:0000667	145	1491	.	.	.	ID=SV_235;Name=unaligned_end;ins_len=1347;query_dir=1;ref_sequence=CP007712.1;ref_coord=3092217;color=#EE0000
+##sequence-region	172	1	1434
+172	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_236;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1060377;color=#EE0000
+172	NucDiff_v2.0	SO:0000667	1431	1434	.	.	.	ID=SV_237;Name=unaligned_end;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=1061806;color=#EE0000
+##sequence-region	173	1	1413
+173	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_238;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1813637;color=#EE0000
+173	NucDiff_v2.0	SO:0000667	1413	1413	.	.	.	ID=SV_239;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1815048;color=#EE0000
+##sequence-region	174	1	1391
+174	NucDiff_v2.0	SO:0000001	1	1391	.	.	.	ID=SV_240;Name=unaligned_sequence;color=#990000
+##sequence-region	175	1	1357
+175	NucDiff_v2.0	SO:0000667	1	1122	.	.	.	ID=SV_241;Name=unaligned_beginning;ins_len=1122;query_dir=1;ref_sequence=CP007712.1;ref_coord=486493;color=#EE0000
+175	NucDiff_v2.0	SO:0000667	1357	1357	.	.	.	ID=SV_242;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=486259;color=#EE0000
+##sequence-region	176	1	1333
+176	NucDiff_v2.0	SO:0000667	1	2	.	.	.	ID=SV_243;Name=unaligned_beginning;ins_len=2;query_dir=1;ref_sequence=CP007712.1;ref_coord=2719232;color=#EE0000
+176	NucDiff_v2.0	SO:0000667	1333	1333	.	.	.	ID=SV_244;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2720529;color=#EE0000
+##sequence-region	177	1	1328
+177	NucDiff_v2.0	SO:0000001	1	1328	.	.	.	ID=SV_245;Name=unaligned_sequence;color=#990000
+##sequence-region	178	1	1325
+178	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_246;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3640174;color=#EE0000
+178	NucDiff_v2.0	SO:0000667	1325	1325	.	.	.	ID=SV_247;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3641497;color=#EE0000
+##sequence-region	179	1	1312
+179	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_248;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3429276;color=#EE0000
+179	NucDiff_v2.0	SO:0000667	1309	1312	.	.	.	ID=SV_249;Name=unaligned_end;ins_len=4;query_dir=1;ref_sequence=CP007712.1;ref_coord=3430583;color=#EE0000
+##sequence-region	180	1	1213
+180	NucDiff_v2.0	SO:0000667	1	273	.	.	.	ID=SV_250;Name=unaligned_beginning;ins_len=273;query_dir=1;ref_sequence=CP007712.1;ref_coord=1893045;color=#EE0000
+180	NucDiff_v2.0	SO:0000667	1213	1213	.	.	.	ID=SV_251;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1893957;color=#EE0000
+##sequence-region	181	1	1208
+181	NucDiff_v2.0	SO:0000001	1	1208	.	.	.	ID=SV_252;Name=unaligned_sequence;color=#990000
+##sequence-region	182	1	1198
+182	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_253;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3499728;color=#EE0000
+182	NucDiff_v2.0	SO:0000667	1198	1198	.	.	.	ID=SV_254;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3498532;color=#EE0000
+##sequence-region	183	1	1176
+183	NucDiff_v2.0	SO:0000667	1	935	.	.	.	ID=SV_255;Name=unaligned_beginning;ins_len=935;query_dir=1;ref_sequence=CP007712.1;ref_coord=1554922;color=#EE0000
+183	NucDiff_v2.0	SO:0000667	1172	1176	.	.	.	ID=SV_256;Name=unaligned_end;ins_len=5;query_dir=1;ref_sequence=CP007712.1;ref_coord=1554688;color=#EE0000
+##sequence-region	184	1	1162
+184	NucDiff_v2.0	SO:0000001	1	1162	.	.	.	ID=SV_257;Name=unaligned_sequence;color=#990000
+##sequence-region	185	1	1105
+185	NucDiff_v2.0	SO:0000667	1	688	.	.	.	ID=SV_258;Name=unaligned_beginning;ins_len=688;query_dir=1;ref_sequence=CP007712.1;ref_coord=1375980;color=#EE0000
+185	NucDiff_v2.0	SO:0000667	1105	1105	.	.	.	ID=SV_259;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=1375564;color=#EE0000
+##sequence-region	186	1	1104
+186	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_260;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2966232;color=#EE0000
+186	NucDiff_v2.0	SO:1000002	239	247	.	.	.	ID=SV_261;Name=substitution;subst_len=9;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2965987-2965995;color=#42C042
+186	NucDiff_v2.0	SO:0000159	247	247	.	.	.	ID=SV_262;Name=deletion;del_len=9562;query_dir=-1;ref_sequence=CP007712.1;ref_coord=2956425-2965986;color=#0000EE
+186	NucDiff_v2.0	SO:0000667	1104	1104	.	.	.	ID=SV_263;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2955567;color=#EE0000
+##sequence-region	187	1	1090
+187	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_264;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3261053;color=#EE0000
+187	NucDiff_v2.0	SO:0000667	1085	1090	.	.	.	ID=SV_265;Name=unaligned_end;ins_len=6;query_dir=1;ref_sequence=CP007712.1;ref_coord=3259970;color=#EE0000
+##sequence-region	188	1	1062
+188	NucDiff_v2.0	SO:0000667	1	356	.	.	.	ID=SV_266;Name=unaligned_beginning;ins_len=356;query_dir=1;ref_sequence=CP007712.1;ref_coord=2580353;color=#EE0000
+188	NucDiff_v2.0	SO:0000667	1062	1062	.	.	.	ID=SV_267;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2581056;color=#EE0000
+##sequence-region	189	1	1047
+189	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_268;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3203851;color=#EE0000
+189	NucDiff_v2.0	SO:0000667	236	1047	.	.	.	ID=SV_269;Name=unaligned_end;ins_len=812;query_dir=1;ref_sequence=CP007712.1;ref_coord=3204085;color=#EE0000
+##sequence-region	190	1	1032
+190	NucDiff_v2.0	SO:0000001	1	1032	.	.	.	ID=SV_270;Name=unaligned_sequence;color=#990000
+##sequence-region	191	1	1012
+191	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_271;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2481923;color=#EE0000
+191	NucDiff_v2.0	SO:0000667	1012	1012	.	.	.	ID=SV_272;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=2480920;color=#EE0000
+##sequence-region	192	1	1004
+192	NucDiff_v2.0	SO:0000667	1	1	.	.	.	ID=SV_273;Name=unaligned_beginning;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3479246;color=#EE0000
+192	NucDiff_v2.0	SO:0000667	1004	1004	.	.	.	ID=SV_274;Name=unaligned_end;ins_len=1;query_dir=1;ref_sequence=CP007712.1;ref_coord=3478244;color=#EE0000

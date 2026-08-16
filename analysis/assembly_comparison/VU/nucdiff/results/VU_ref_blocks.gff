@@ -1,0 +1,5 @@
+##gff-version 3
+##sequence-region	CP018664.1	1	4004792
+CP018664.1	NucDiff_v2.0	SO:0000001	1	1540578	.	.	.	ID=Blk_1;Name=1_block;blk_length=1540578;query_sequence_length=3901160;blk_coord_query=2360904-3901160;query_dir=1
+CP018664.1	NucDiff_v2.0	SO:0000001	1540579	1672596	.	.	.	ID=Blk_2;Name=1_block;blk_length=132018;query_sequence_length=3901160;blk_coord_query=1-132018;query_dir=1
+CP018664.1	NucDiff_v2.0	SO:0000001	1775864	4004792	.	.	.	ID=Blk_3;Name=1_block;blk_length=2228929;query_sequence_length=3901160;blk_coord_query=132018-2360903;query_dir=1

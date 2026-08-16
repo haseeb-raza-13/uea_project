@@ -1,0 +1,10 @@
+##gff-version 3
+##sequence-region	1	1	4004348
+1	NucDiff_v2.0	SO:0001874	1	1910619	.	.	.	ID=SV_1;Name=reshuffling-part_2_gr_0;blk_len=1910619;query_dir=1;ref_sequence=CP019034.1;ref_coord=2094060-4004719;color=#404040
+1	NucDiff_v2.0	SO:0000159	699087	699087	.	.	.	ID=SV_2;Name=collapsed_tandem_repeat;del_len=36;query_dir=1;ref_sequence=CP019034.1;ref_coord=2793152-2793187;query_repeated_region_1=698918-699087;query_repeated_region_2=698954-699087;color=#0000EE
+1	NucDiff_v2.0	SO:0001874	1910620	4004348	.	.	.	ID=SV_3;Name=reshuffling-part_1_gr_0;blk_len=2093729;query_dir=1;ref_sequence=CP019034.1;ref_coord=1-2094059;color=#404040
+1	NucDiff_v2.0	SO:0000159	3009167	3009167	.	.	.	ID=SV_4;Name=collapsed_tandem_repeat;del_len=333;query_dir=1;ref_sequence=CP019034.1;ref_coord=1098549-1098881;query_repeated_region_1=3008187-3009167;query_repeated_region_2=3008520-3009167;color=#0000EE
+##sequence-region	2	1	13409
+2	NucDiff_v2.0	SO:0000001	1	13409	.	.	.	ID=SV_5;Name=unaligned_sequence;color=#990000
+##sequence-region	3	1	11302
+3	NucDiff_v2.0	SO:0000001	1	11302	.	.	.	ID=SV_6;Name=unaligned_sequence;color=#990000

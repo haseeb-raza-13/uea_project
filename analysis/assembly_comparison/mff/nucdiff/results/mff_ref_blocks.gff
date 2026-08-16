@@ -1,0 +1,7 @@
+##gff-version 3
+##sequence-region	CP012004.1	1	3857743
+CP012004.1	NucDiff_v2.0	SO:0000001	1	1919325	.	.	.	ID=Blk_1;Name=1_block;blk_length=1919325;query_sequence_length=3857737;blk_coord_query=1938411-3857737;query_dir=1
+CP012004.1	NucDiff_v2.0	SO:0000001	1662258	1675362	.	.	.	ID=Blk_2;Name=2_block;blk_length=13105;query_sequence_length=148955;blk_coord_query=23859-36963;query_dir=1
+CP012004.1	NucDiff_v2.0	SO:0000001	1919326	3857743	.	.	.	ID=Blk_3;Name=1_block;blk_length=1938418;query_sequence_length=3857737;blk_coord_query=1-1938410;query_dir=1
+CP012004.1	NucDiff_v2.0	SO:0000001	2048992	2050301	.	.	.	ID=Blk_4;Name=2_block;blk_length=1310;query_sequence_length=148955;blk_coord_query=143553-144862;query_dir=-1
+CP012004.1	NucDiff_v2.0	SO:0000001	2939729	2940767	.	.	.	ID=Blk_5;Name=2_block;blk_length=1039;query_sequence_length=148955;blk_coord_query=48892-49930;query_dir=-1

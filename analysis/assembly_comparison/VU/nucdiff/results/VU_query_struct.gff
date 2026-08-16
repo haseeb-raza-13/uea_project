@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region	1	1	3901160
+1	NucDiff_v2.0	SO:0001874	132018	132018	.	.	.	ID=SV_1;Name=relocation-overlap;overlap_len=1;ref_sequence=CP018664.1;blk_1_query=1-132018;blk_1_ref=1540579-1672596;blk_1_query_len=132018;blk_1_ref_len=132018;blk_1_st_query=1;blk_1_st_ref=1540579;blk_1_end_query=132018;blk_1_end_ref=1672596;blk_2_query=132018-2360903;blk_2_ref=1775864-4004792;blk_2_query_len=2228886;blk_2_ref_len=2228929;blk_2_st_query=132018;blk_2_st_ref=1775864;blk_2_end_query=2360903;blk_2_end_ref=4004792;color=#990099
+1	NucDiff_v2.0	SO:0000159	595819	595819	.	.	.	ID=SV_2;Name=collapsed_tandem_repeat;del_len=36;query_dir=1;ref_sequence=CP018664.1;ref_coord=2239671-2239706;query_repeated_region_1=595650-595819;query_repeated_region_2=595686-595819;color=#0000EE
+1	NucDiff_v2.0	SO:0001874	2360904	2360904	.	.	.	ID=SV_3;Name=circular_genome_start;ref_sequence=CP018664.1;blk_1_query=132018-2360903;blk_1_ref=1775864-4004792;blk_1_query_len=2228886;blk_1_ref_len=2228929;blk_1_st_query=132018;blk_1_st_ref=1775864;blk_1_end_query=2360903;blk_1_end_ref=4004792;blk_2_query=2360904-3901160;blk_2_ref=1-1540578;blk_2_query_len=1540257;blk_2_ref_len=1540578;blk_2_st_query=2360904;blk_2_st_ref=1;blk_2_end_query=3901160;blk_2_end_ref=1540578;color=#990099
+1	NucDiff_v2.0	SO:0000159	2905970	2905970	.	.	.	ID=SV_4;Name=collapsed_tandem_repeat;del_len=333;query_dir=1;ref_sequence=CP018664.1;ref_coord=545068-545400;query_repeated_region_1=2904990-2905970;query_repeated_region_2=2905323-2905970;color=#0000EE
+##sequence-region	2	1	24711
+2	NucDiff_v2.0	SO:0000001	1	24711	.	.	.	ID=SV_5;Name=unaligned_sequence;color=#990000

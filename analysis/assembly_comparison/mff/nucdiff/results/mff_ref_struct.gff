@@ -1,0 +1,12 @@
+##gff-version 3
+##sequence-region	CP012004.1	1	3857743
+CP012004.1	NucDiff_v2.0	SO:0001874	1	1919325	.	.	.	ID=SV_2;Name=reshuffling-part_1_gr_0;blk_len=1919327;query_dir=1;query_sequence=1;query_coord=1938411-3857737;color=#404040
+CP012004.1	NucDiff_v2.0	SO:0000667	1662257	1662257	.	.	.	ID=SV_3;Name=unaligned_beginning;ins_len=14762;query_dir=1;query_sequence=2;query_coord=1-14762;color=#EE0000
+CP012004.1	NucDiff_v2.0	SO:1000035	1662257	1662257	.	.	.	ID=SV_4;Name=duplication;ins_len=9096;query_dir=1;query_sequence=2;query_coord=14763-23858;color=#EE0000
+CP012004.1	NucDiff_v2.0	SO:0001874	1675362	1675362	.	.	.	ID=SV_5.1;Name=relocation-insertion;ins_len=11928;query_sequence=2;query_coord=36963;breakpoint_query=36964-48891;blk_query=23859-36963;blk_ref=1662258-1675362;blk_query_len=13105;blk_ref_len=13105;color=#990099
+CP012004.1	NucDiff_v2.0	SO:0001874	1919326	3857743	.	.	.	ID=SV_1;Name=reshuffling-part_2_gr_0;blk_len=1938410;query_dir=1;query_sequence=1;query_coord=1-1938410;color=#404040
+CP012004.1	NucDiff_v2.0	SO:1000035	2048991	2048991	.	.	.	ID=SV_7;Name=duplication;ins_len=2208;query_dir=1;query_sequence=2;query_coord=144863-147070;color=#EE0000
+CP012004.1	NucDiff_v2.0	SO:0000667	2048991	2048991	.	.	.	ID=SV_8;Name=unaligned_end;ins_len=1885;query_dir=1;query_sequence=2;query_coord=147071-148955;color=#EE0000
+CP012004.1	NucDiff_v2.0	SO:0001874	2050301	2050301	.	.	.	ID=SV_6.2;Name=relocation-insertion;ins_len=93622;query_sequence=2;query_coord=143553;breakpoint_query=49931-143552;blk_query=143553-144862;blk_ref=2048992-2050301;blk_query_len=1310;blk_ref_len=1310;color=#990099
+CP012004.1	NucDiff_v2.0	SO:0001874	2939729	2939729	.	.	.	ID=SV_6.1;Name=relocation-insertion;ins_len=93622;query_sequence=2;query_coord=49930;breakpoint_query=49931-143552;blk_query=48892-49930;blk_ref=2939729-2940767;blk_query_len=1039;blk_ref_len=1039;color=#990099
+CP012004.1	NucDiff_v2.0	SO:0001874	2940767	2940767	.	.	.	ID=SV_5.2;Name=relocation-insertion;ins_len=11928;query_sequence=2;query_coord=48892;breakpoint_query=36964-48891;blk_query=48892-49930;blk_ref=2939729-2940767;blk_query_len=1039;blk_ref_len=1039;color=#990099

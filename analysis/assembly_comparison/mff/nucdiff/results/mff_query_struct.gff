@@ -1,0 +1,15 @@
+##gff-version 3
+##sequence-region	1	1	3857737
+1	NucDiff_v2.0	SO:0001874	1	1938410	.	.	.	ID=SV_1;Name=reshuffling-part_2_gr_0;blk_len=1938410;query_dir=1;ref_sequence=CP012004.1;ref_coord=1919326-3857743;color=#404040
+1	NucDiff_v2.0	SO:0001874	1938411	3857737	.	.	.	ID=SV_2;Name=reshuffling-part_1_gr_0;blk_len=1919327;query_dir=1;ref_sequence=CP012004.1;ref_coord=1-1919325;color=#404040
+##sequence-region	2	1	148955
+2	NucDiff_v2.0	SO:0000667	1	14762	.	.	.	ID=SV_3;Name=unaligned_beginning;ins_len=14762;query_dir=1;ref_sequence=CP012004.1;ref_coord=1662257;color=#EE0000
+2	NucDiff_v2.0	SO:1000035	14763	23858	.	.	.	ID=SV_4;Name=duplication;ins_len=9096;query_dir=1;ref_sequence=CP012004.1;ref_coord=1662257;color=#EE0000
+2	NucDiff_v2.0	SO:0001874	36964	48891	.	.	.	ID=SV_5;Name=relocation-insertion;ins_len=11928;ref_sequence=CP012004.1;blk_1_query=23859-36963;blk_1_ref=1662258-1675362;blk_1_query_len=13105;blk_1_ref_len=13105;blk_1_st_query=23859;blk_1_st_ref=1662258;blk_1_end_query=36963;blk_1_end_ref=1675362;blk_2_query=48892-49930;blk_2_ref=2939729-2940767;blk_2_query_len=1039;blk_2_ref_len=1039;blk_2_st_query=48892;blk_2_st_ref=2940767;blk_2_end_query=49930;blk_2_end_ref=2939729;color=#990099
+2	NucDiff_v2.0	SO:0001874	49931	143552	.	.	.	ID=SV_6;Name=relocation-insertion;ins_len=93622;ref_sequence=CP012004.1;blk_1_query=48892-49930;blk_1_ref=2939729-2940767;blk_1_query_len=1039;blk_1_ref_len=1039;blk_1_st_query=48892;blk_1_st_ref=2940767;blk_1_end_query=49930;blk_1_end_ref=2939729;blk_2_query=143553-144862;blk_2_ref=2048992-2050301;blk_2_query_len=1310;blk_2_ref_len=1310;blk_2_st_query=143553;blk_2_st_ref=2050301;blk_2_end_query=144862;blk_2_end_ref=2048992;color=#990099
+2	NucDiff_v2.0	SO:1000035	144863	147070	.	.	.	ID=SV_7;Name=duplication;ins_len=2208;query_dir=1;ref_sequence=CP012004.1;ref_coord=2048991;color=#EE0000
+2	NucDiff_v2.0	SO:0000667	147071	148955	.	.	.	ID=SV_8;Name=unaligned_end;ins_len=1885;query_dir=1;ref_sequence=CP012004.1;ref_coord=2048991;color=#EE0000
+##sequence-region	3	1	13409
+3	NucDiff_v2.0	SO:0000001	1	13409	.	.	.	ID=SV_9;Name=unaligned_sequence;color=#990000
+##sequence-region	4	1	11302
+4	NucDiff_v2.0	SO:0000001	1	11302	.	.	.	ID=SV_10;Name=unaligned_sequence;color=#990000

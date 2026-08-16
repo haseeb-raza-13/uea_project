@@ -1,0 +1,4 @@
+##gff-version 3
+##sequence-region	CP019034.1	1	4004719
+CP019034.1	NucDiff_v2.0	SO:0000001	1	2094059	.	.	.	ID=Blk_1;Name=1_block;blk_length=2094059;query_sequence_length=4004348;blk_coord_query=1910620-4004348;query_dir=1
+CP019034.1	NucDiff_v2.0	SO:0000001	2094060	4004719	.	.	.	ID=Blk_2;Name=1_block;blk_length=1910660;query_sequence_length=4004348;blk_coord_query=1-1910619;query_dir=1

@@ -1,0 +1,6 @@
+##gff-version 3
+##sequence-region	CP019034.1	1	4004719
+CP019034.1	NucDiff_v2.0	SO:0000657	1097568	1098548	.	.	.	ID=Region_1;Name=Repeated_region;repeat_len=981;difference_type=collapsed_tandem_repeat;difference_coord_ref=1098549-1098881;difference_len=333;color=#DB0101
+CP019034.1	NucDiff_v2.0	SO:0000657	1097901	1098548	.	.	.	ID=Region_2;Name=Repeated_region;repeat_len=648;difference_type=collapsed_tandem_repeat;difference_coord_ref=1098549-1098881;difference_len=333;color=#DB0101
+CP019034.1	NucDiff_v2.0	SO:0000657	2792977	2793151	.	.	.	ID=Region_3;Name=Repeated_region;repeat_len=175;difference_type=collapsed_tandem_repeat;difference_coord_ref=2793152-2793187;difference_len=36;color=#DB0101
+CP019034.1	NucDiff_v2.0	SO:0000657	2793013	2793151	.	.	.	ID=Region_4;Name=Repeated_region;repeat_len=139;difference_type=collapsed_tandem_repeat;difference_coord_ref=2793152-2793187;difference_len=36;color=#DB0101

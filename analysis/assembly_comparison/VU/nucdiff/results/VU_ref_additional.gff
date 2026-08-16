@@ -1,0 +1,9 @@
+##gff-version 3
+##sequence-region	CP018664.1	1	4004792
+CP018664.1	NucDiff_v2.0	SO:0000657	544087	545067	.	.	.	ID=Region_1;Name=Repeated_region;repeat_len=981;difference_type=collapsed_tandem_repeat;difference_coord_ref=545068-545400;difference_len=333;color=#DB0101
+CP018664.1	NucDiff_v2.0	SO:0000657	544420	545067	.	.	.	ID=Region_2;Name=Repeated_region;repeat_len=648;difference_type=collapsed_tandem_repeat;difference_coord_ref=545068-545400;difference_len=333;color=#DB0101
+CP018664.1	NucDiff_v2.0	SO:0000001	1672596	1672596	.	.	.	ID=Region_3;Name=Relocation_overlap_region;overlap_len=1;color=#00A123
+CP018664.1	NucDiff_v2.0	SO:0000001	1672597	1775863	.	.	.	ID=Region_4;Name=Uncovered_region;region_len=103267;color=#000000
+CP018664.1	NucDiff_v2.0	SO:0000001	1775864	1775864	.	.	.	ID=Region_5;Name=Relocation_overlap_region;overlap_len=1;color=#00A123
+CP018664.1	NucDiff_v2.0	SO:0000657	2239496	2239670	.	.	.	ID=Region_6;Name=Repeated_region;repeat_len=175;difference_type=collapsed_tandem_repeat;difference_coord_ref=2239671-2239706;difference_len=36;color=#DB0101
+CP018664.1	NucDiff_v2.0	SO:0000657	2239532	2239670	.	.	.	ID=Region_7;Name=Repeated_region;repeat_len=139;difference_type=collapsed_tandem_repeat;difference_coord_ref=2239671-2239706;difference_len=36;color=#DB0101

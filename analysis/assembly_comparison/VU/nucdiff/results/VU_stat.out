@@ -1,0 +1,46 @@
+Total number	114
+Insertions	4
+Deletions	5
+Substitutions	102
+Translocations	0
+Relocations	1
+Reshufflings	0
+Reshuffled blocks	0
+Inversions	0
+Unaligned sequences	1
+
+Uncovered ref regions num	1
+Uncovered ref regions len	103267
+
+DETAILED INFORMATION:	
+substitution	102
+gap	0
+
+insertion	4
+duplication	0
+tandem_duplication	0
+unaligned_beginning	0
+unaligned_end	0
+inserted_gap	0
+
+deletion	3
+collapsed_repeat	0
+tandem_collapsed_repeat	2
+
+translocation	0
+translocation-insertion	0
+translocation-insertion_ATGCN	0
+translocation-inserted_gap	0
+translocation-overlap	0
+
+circular_genome_start	1
+relocation	0
+relocation-insertion	0
+relocation-insertion_ATGCN	0
+relocation-inserted_gap	0
+relocation-overlap	1
+
+
+ADDITIONAL INFORMATION:	
+query sequences	2
+reference sequences	1

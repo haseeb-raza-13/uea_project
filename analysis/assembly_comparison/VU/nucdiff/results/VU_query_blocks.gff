@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region	1	1	3901160
+1	NucDiff_v2.0	SO:0000001	1	132018	.	.	.	ID=Blk_1;Name=Block;blk_length=132018;query_dir=1;ref_sequence=CP018664.1;ref_coord=1540579-1672596;color=#000000
+1	NucDiff_v2.0	SO:0000001	1	132018	.	.	.	ID=Blk_2;Name=Relocation_block;blk_length=132018;color=#01DFD7
+1	NucDiff_v2.0	SO:0000001	132018	2360903	.	.	.	ID=Blk_3;Name=Block;blk_length=2228886;query_dir=1;ref_sequence=CP018664.1;ref_coord=1775864-4004792;color=#000000
+1	NucDiff_v2.0	SO:0000001	132018	2360903	.	.	.	ID=Blk_4;Name=Circular_genome_block;blk_length=2228886;color=#990099
+1	NucDiff_v2.0	SO:0000001	2360904	3901160	.	.	.	ID=Blk_5;Name=Block;blk_length=1540257;query_dir=1;ref_sequence=CP018664.1;ref_coord=1-1540578;color=#000000
+1	NucDiff_v2.0	SO:0000001	2360904	3901160	.	.	.	ID=Blk_6;Name=Circular_genome_block;blk_length=1540257;color=#990099

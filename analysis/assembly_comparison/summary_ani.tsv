@@ -1,0 +1,6 @@
+PairID	Reference	Query	ANI	BidirectionalFragmentMappings	TotalQueryFragments	FastANIVersion
+mff	reference_seq/mff.fna	hybrid_assembly/Hgn_mff_n.fasta	99.9996	1279	1341	version 1.34
+VU	reference_seq/8VU.fna	hybrid_assembly/Hgn_VU_n.fasta	99.9989	1291	1308	version 1.34
+AB30	reference_seq/AB30.fna	hybrid_assembly/Hgn_AB30_n.fasta	99.9849	1404	1652	version 1.34
+AB42	reference_seq/AB42.fna	hybrid_assembly/Hgn_AB042_n.fasta	99.9986	1328	1341	version 1.34
+Lac4	reference_seq/Lac4.fna	hybrid_assembly/Hgn_Lac4_n.fasta	99.9309	1203	1406	version 1.34

@@ -1,0 +1,24 @@
+/mnt/c/Users/star/Desktop/uea_project/reference_seq/AB42.fna /mnt/c/Users/star/Desktop/uea_project/hybrid_assembly/Hgn_AB042_n.fasta
+NUCMER
+>CP019034.1 1 4004719 4004348
+1 1098548 1910620 3009167 101 101 0
+0
+1097901 2094059 3008187 4004348 7 7 0
+-339570
+-449680
+-174169
+0
+2094060 2793151 1 699087 5 5 0
+699046
+1
+1
+1
+1
+0
+2793013 4004719 698918 1910619 21 21 0
+89
+1
+1
+1
+1
+0

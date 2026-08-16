@@ -1,0 +1,15 @@
+##gff-version 3
+##sequence-region	1	1	1515311
+1	NucDiff_v2.0	SO:0000657	1115272	1116147	.	.	.	ID=Region_1;Name=Repeated_region;repeat_len=876;difference_type=collapsed_tandem_repeat;difference_coord_query=1116147-1116147;difference_len=285
+1	NucDiff_v2.0	SO:0000657	1115557	1116147	.	.	.	ID=Region_2;Name=Repeated_region;repeat_len=591;difference_type=collapsed_tandem_repeat;difference_coord_query=1116147-1116147;difference_len=285
+1	NucDiff_v2.0	SO:0000657	1211588	1211831	.	.	.	ID=Region_3;Name=Repeated_region;repeat_len=244;difference_type=collapsed_tandem_repeat;difference_coord_query=1211831-1211831;difference_len=168
+1	NucDiff_v2.0	SO:0000657	1211756	1211831	.	.	.	ID=Region_4;Name=Repeated_region;repeat_len=76;difference_type=collapsed_tandem_repeat;difference_coord_query=1211831-1211831;difference_len=168
+##sequence-region	2	1	1192127
+2	NucDiff_v2.0	SO:0000657	745822	745825	.	.	.	ID=Region_5;Name=Repeated_region;repeat_len=4;difference_type=duplication;difference_coord_query=746708-746711;difference_len=4
+##sequence-region	12	1	22671
+12	NucDiff_v2.0	SO:0000657	228	281	.	.	.	ID=Region_6;Name=Repeated_region;repeat_len=54;difference_type=duplication;difference_coord_query=22541-22595;difference_len=55
+##sequence-region	40	1	5631
+40	NucDiff_v2.0	SO:0000657	1204	1313	.	.	.	ID=Region_7;Name=Repeated_region;repeat_len=110;difference_type=collapsed_repeat;difference_coord_query=1313-1313;difference_len=110
+40	NucDiff_v2.0	SO:0000657	1774	1774	.	.	.	ID=Region_8;Name=Repeated_region;repeat_len=1;difference_type=collapsed_repeat;difference_coord_query=1774-1774;difference_len=1
+##sequence-region	108	1	1973
+108	NucDiff_v2.0	SO:0000657	1526	1635	.	.	.	ID=Region_9;Name=Repeated_region;repeat_len=110;difference_type=collapsed_repeat;difference_coord_query=1635-1635;difference_len=110

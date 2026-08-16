@@ -1,0 +1,398 @@
+##gff-version 3
+##sequence-region	1	1	1515311
+1	NucDiff_v2.0	SO:0000001	1	1515311	.	.	.	ID=Blk_1;Name=Block;blk_length=1515311;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1911962-3427726;color=#000000
+##sequence-region	2	1	1192127
+2	NucDiff_v2.0	SO:0000001	1	558210	.	.	.	ID=Blk_2;Name=Block;blk_length=558210;query_dir=-1;ref_sequence=CP009257.1;ref_coord=782464-1340674;color=#000000
+2	NucDiff_v2.0	SO:0000001	1	558210	.	.	.	ID=Blk_3;Name=Relocation_block;blk_length=558210;color=#01DFD7
+2	NucDiff_v2.0	SO:0000001	548401	798997	.	.	.	ID=Blk_4;Name=Block;blk_length=250597;query_dir=1;ref_sequence=CP009257.1;ref_coord=4086081-4335793;color=#000000
+2	NucDiff_v2.0	SO:0000001	548401	798997	.	.	.	ID=Blk_5;Name=Circular_genome_block;blk_length=250597;color=#990099
+2	NucDiff_v2.0	SO:0000001	798998	1192127	.	.	.	ID=Blk_6;Name=Block;blk_length=393130;query_dir=1;ref_sequence=CP009257.1;ref_coord=1-393127;color=#000000
+2	NucDiff_v2.0	SO:0000001	798998	1192127	.	.	.	ID=Blk_7;Name=Circular_genome_block;blk_length=393130;color=#990099
+##sequence-region	3	1	1181104
+3	NucDiff_v2.0	SO:0000001	1	634441	.	.	.	ID=Blk_8;Name=Block;blk_length=634441;query_dir=1;ref_sequence=CP009257.1;ref_coord=3461449-4095891;color=#000000
+3	NucDiff_v2.0	SO:0000001	1	634441	.	.	.	ID=Blk_9;Name=Relocation_block;blk_length=634441;color=#01DFD7
+3	NucDiff_v2.0	SO:0000001	624632	1004002	.	.	.	ID=Blk_10;Name=Block;blk_length=379371;query_dir=-1;ref_sequence=CP009257.1;ref_coord=412902-792272;color=#000000
+3	NucDiff_v2.0	SO:0000001	624632	1004002	.	.	.	ID=Blk_11;Name=Relocation_block;blk_length=379371;color=#01DFD7
+3	NucDiff_v2.0	SO:0000001	994218	1181104	.	.	.	ID=Blk_12;Name=Block;blk_length=186887;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1352969-1539855;color=#000000
+3	NucDiff_v2.0	SO:0000001	994218	1181104	.	.	.	ID=Blk_13;Name=Relocation_block;blk_length=186887;color=#01DFD7
+##sequence-region	4	1	314258
+4	NucDiff_v2.0	SO:0000001	1	314258	.	.	.	ID=Blk_14;Name=Block;blk_length=314258;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1546174-1860429;color=#000000
+##sequence-region	5	1	106967
+5	NucDiff_v2.0	SO:0000001	2	77	.	.	.	ID=Blk_15;Name=Block;blk_length=76;query_dir=-1;ref_sequence=CP009257.1;ref_coord=430141-430216;color=#000000
+5	NucDiff_v2.0	SO:0000001	2	77	.	.	.	ID=Blk_16;Name=Inversion;blk_length=76;query_dir=-1;ref_sequence=CP009257.1;ref_coord=430141-430216;color=#DF0101
+5	NucDiff_v2.0	SO:0000001	106581	106967	.	.	.	ID=Blk_17;Name=Block;blk_length=387;query_dir=-1;ref_sequence=CP009257.1;ref_coord=430218-430604;color=#000000
+5	NucDiff_v2.0	SO:0000001	106581	106967	.	.	.	ID=Blk_18;Name=Inversion;blk_length=387;query_dir=-1;ref_sequence=CP009257.1;ref_coord=430218-430604;color=#DF0101
+##sequence-region	6	1	73797
+6	NucDiff_v2.0	SO:0000001	18457	18460	.	.	.	ID=Blk_19;Name=Block;blk_length=4;query_dir=-1;ref_sequence=CP009257.1;ref_coord=658062-658065;color=#000000
+6	NucDiff_v2.0	SO:0000001	18457	18460	.	.	.	ID=Blk_20;Name=Relocation_block;blk_length=4;color=#01DFD7
+6	NucDiff_v2.0	SO:0000001	18462	19317	.	.	.	ID=Blk_21;Name=Block;blk_length=856;query_dir=1;ref_sequence=CP009257.1;ref_coord=2398823-2399677;color=#000000
+6	NucDiff_v2.0	SO:0000001	18462	19317	.	.	.	ID=Blk_22;Name=Relocation_block;blk_length=856;color=#01DFD7
+6	NucDiff_v2.0	SO:0000001	21669	22573	.	.	.	ID=Blk_23;Name=Block;blk_length=905;query_dir=1;ref_sequence=CP009257.1;ref_coord=608179-609081;color=#000000
+6	NucDiff_v2.0	SO:0000001	21669	22573	.	.	.	ID=Blk_24;Name=Relocation_block;blk_length=905;color=#01DFD7
+6	NucDiff_v2.0	SO:0000001	21686	22579	.	.	.	ID=Blk_25;Name=Block;blk_length=894;query_dir=1;ref_sequence=CP009257.1;ref_coord=1181189-1182082;color=#000000
+6	NucDiff_v2.0	SO:0000001	21686	22579	.	.	.	ID=Blk_26;Name=Relocation_block;blk_length=894;color=#01DFD7
+6	NucDiff_v2.0	SO:0000001	37169	38017	.	.	.	ID=Blk_27;Name=Block;blk_length=849;query_dir=1;ref_sequence=CP009257.1;ref_coord=295543-296391;color=#000000
+6	NucDiff_v2.0	SO:0000001	37169	38017	.	.	.	ID=Blk_28;Name=Relocation_block;blk_length=849;color=#01DFD7
+6	NucDiff_v2.0	SO:0000001	37171	38018	.	.	.	ID=Blk_29;Name=Block;blk_length=848;query_dir=1;ref_sequence=CP009257.1;ref_coord=657214-658061;color=#000000
+6	NucDiff_v2.0	SO:0000001	37171	38018	.	.	.	ID=Blk_30;Name=Relocation_block;blk_length=848;color=#01DFD7
+##sequence-region	7	1	60149
+7	NucDiff_v2.0	SO:0000001	2872	17951	.	.	.	ID=Blk_31;Name=Block;blk_length=15080;query_dir=-1;ref_sequence=CP009257.1;ref_coord=147212-162209;color=#000000
+7	NucDiff_v2.0	SO:0000001	2872	17951	.	.	.	ID=Blk_32;Name=Relocation_block;blk_length=15080;color=#01DFD7
+7	NucDiff_v2.0	SO:0000001	39997	40755	.	.	.	ID=Blk_33;Name=Block;blk_length=759;query_dir=1;ref_sequence=CP009257.1;ref_coord=3949115-3949872;color=#000000
+7	NucDiff_v2.0	SO:0000001	39997	40755	.	.	.	ID=Blk_34;Name=Relocation_block;blk_length=759;color=#01DFD7
+##sequence-region	8	1	40939
+8	NucDiff_v2.0	SO:0000001	20348	21203	.	.	.	ID=Blk_35;Name=Block;blk_length=856;query_dir=1;ref_sequence=CP009257.1;ref_coord=2398816-2399668;color=#000000
+8	NucDiff_v2.0	SO:0000001	20348	21203	.	.	.	ID=Blk_36;Name=Relocation_block;blk_length=856;color=#01DFD7
+8	NucDiff_v2.0	SO:0000001	20357	21207	.	.	.	ID=Blk_37;Name=Block;blk_length=851;query_dir=1;ref_sequence=CP009257.1;ref_coord=2061928-2062776;color=#000000
+8	NucDiff_v2.0	SO:0000001	20357	21207	.	.	.	ID=Blk_38;Name=Relocation_block;blk_length=851;color=#01DFD7
+8	NucDiff_v2.0	SO:0000001	38643	38819	.	.	.	ID=Blk_39;Name=Block;blk_length=177;query_dir=1;ref_sequence=CP009257.1;ref_coord=616165-616341;color=#000000
+8	NucDiff_v2.0	SO:0000001	38643	38819	.	.	.	ID=Blk_40;Name=Relocation_block;blk_length=177;color=#01DFD7
+##sequence-region	9	1	35499
+9	NucDiff_v2.0	SO:0000001	1	31276	.	.	.	ID=Blk_41;Name=Block;blk_length=31276;query_dir=1;ref_sequence=CP009257.1;ref_coord=1878525-1909800;color=#000000
+9	NucDiff_v2.0	SO:0000001	1	31276	.	.	.	ID=Blk_42;Name=Reshuffling-part_2_gr_0;blk_length=31276;query_dir=1;ref_sequence=CP009257.1;ref_coord=1878525-1909800;color=#04B404
+9	NucDiff_v2.0	SO:0000001	31277	35499	.	.	.	ID=Blk_43;Name=Block;blk_length=4223;query_dir=1;ref_sequence=CP009257.1;ref_coord=1874302-1878524;color=#000000
+9	NucDiff_v2.0	SO:0000001	31277	35499	.	.	.	ID=Blk_44;Name=Reshuffling-part_1_gr_0;blk_length=4223;query_dir=1;ref_sequence=CP009257.1;ref_coord=1874302-1878524;color=#04B404
+##sequence-region	10	1	24111
+10	NucDiff_v2.0	SO:0000001	1393	4513	.	.	.	ID=Blk_45;Name=Block;blk_length=3121;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2655386-2658498;color=#000000
+##sequence-region	11	1	24034
+11	NucDiff_v2.0	SO:0000001	12	1096	.	.	.	ID=Blk_46;Name=Block;blk_length=1085;query_dir=-1;ref_sequence=CP009257.1;ref_coord=424310-425393;color=#000000
+11	NucDiff_v2.0	SO:0000001	12	1096	.	.	.	ID=Blk_47;Name=Relocation_block;blk_length=1085;color=#01DFD7
+11	NucDiff_v2.0	SO:0000001	23063	24034	.	.	.	ID=Blk_48;Name=Block;blk_length=972;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1959043-1960016;color=#000000
+11	NucDiff_v2.0	SO:0000001	23063	24034	.	.	.	ID=Blk_49;Name=Relocation_block;blk_length=972;color=#01DFD7
+##sequence-region	12	1	22671
+12	NucDiff_v2.0	SO:0000001	2	22671	.	.	.	ID=Blk_50;Name=Block;blk_length=22670;query_dir=1;ref_sequence=CP009257.1;ref_coord=1468022-1468378;color=#000000
+##sequence-region	16	1	18399
+16	NucDiff_v2.0	SO:0000001	11639	12169	.	.	.	ID=Blk_51;Name=Block;blk_length=531;query_dir=1;ref_sequence=CP009257.1;ref_coord=311476-312006;color=#000000
+##sequence-region	17	1	18316
+17	NucDiff_v2.0	SO:0000001	17829	18316	.	.	.	ID=Blk_52;Name=Block;blk_length=488;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2062774-2063263;color=#000000
+##sequence-region	18	1	17284
+18	NucDiff_v2.0	SO:0000001	5506	5679	.	.	.	ID=Blk_53;Name=Block;blk_length=174;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2962095-2962269;color=#000000
+18	NucDiff_v2.0	SO:0000001	5506	5679	.	.	.	ID=Blk_54;Name=Relocation_block;blk_length=174;color=#01DFD7
+18	NucDiff_v2.0	SO:0000001	13754	14655	.	.	.	ID=Blk_55;Name=Block;blk_length=902;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2816713-2817612;color=#000000
+18	NucDiff_v2.0	SO:0000001	13754	14655	.	.	.	ID=Blk_56;Name=Relocation_block;blk_length=902;color=#01DFD7
+18	NucDiff_v2.0	SO:0000001	13762	14677	.	.	.	ID=Blk_57;Name=Block;blk_length=916;query_dir=1;ref_sequence=CP009257.1;ref_coord=1194554-1195469;color=#000000
+18	NucDiff_v2.0	SO:0000001	13762	14677	.	.	.	ID=Blk_58;Name=Relocation_block;blk_length=916;color=#01DFD7
+18	NucDiff_v2.0	SO:0000001	16099	17284	.	.	.	ID=Blk_59;Name=Block;blk_length=1186;query_dir=1;ref_sequence=CP009257.1;ref_coord=878722-879906;color=#000000
+18	NucDiff_v2.0	SO:0000001	16099	17284	.	.	.	ID=Blk_60;Name=Relocation_block;blk_length=1186;color=#01DFD7
+##sequence-region	19	1	17046
+19	NucDiff_v2.0	SO:0000001	5	15119	.	.	.	ID=Blk_61;Name=Block;blk_length=15115;query_dir=-1;ref_sequence=CP009257.1;ref_coord=74217-85020;color=#000000
+##sequence-region	22	1	14630
+22	NucDiff_v2.0	SO:0000001	11	325	.	.	.	ID=Blk_62;Name=Block;blk_length=315;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4111695-4112009;color=#000000
+22	NucDiff_v2.0	SO:0000001	11	325	.	.	.	ID=Blk_63;Name=Relocation_block;blk_length=315;color=#01DFD7
+22	NucDiff_v2.0	SO:0000001	13343	14630	.	.	.	ID=Blk_64;Name=Block;blk_length=1288;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4093324-4094610;color=#000000
+22	NucDiff_v2.0	SO:0000001	13343	14630	.	.	.	ID=Blk_65;Name=Relocation_block;blk_length=1288;color=#01DFD7
+##sequence-region	24	1	13207
+24	NucDiff_v2.0	SO:0000001	2224	7538	.	.	.	ID=Blk_66;Name=Block;blk_length=5315;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2917731-2923045;color=#000000
+##sequence-region	25	1	11698
+25	NucDiff_v2.0	SO:0000001	5694	6240	.	.	.	ID=Blk_67;Name=Block;blk_length=547;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4087021-4087566;color=#000000
+25	NucDiff_v2.0	SO:0000001	5694	6240	.	.	.	ID=Blk_68;Name=Relocation_block;blk_length=547;color=#01DFD7
+25	NucDiff_v2.0	SO:0000001	6233	7690	.	.	.	ID=Blk_69;Name=Block;blk_length=1458;query_dir=1;ref_sequence=CP009257.1;ref_coord=791843-793664;color=#000000
+25	NucDiff_v2.0	SO:0000001	6233	7690	.	.	.	ID=Blk_70;Name=Relocation_block;blk_length=1458;color=#01DFD7
+25	NucDiff_v2.0	SO:0000001	7022	9413	.	.	.	ID=Blk_71;Name=Block;blk_length=2392;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4084564-4085946;color=#000000
+25	NucDiff_v2.0	SO:0000001	7022	9413	.	.	.	ID=Blk_72;Name=Relocation_block;blk_length=2392;color=#01DFD7
+25	NucDiff_v2.0	SO:0000001	11589	11698	.	.	.	ID=Blk_73;Name=Block;blk_length=110;query_dir=1;ref_sequence=CP009257.1;ref_coord=797465-797574;color=#000000
+25	NucDiff_v2.0	SO:0000001	11589	11698	.	.	.	ID=Blk_74;Name=Relocation_block;blk_length=110;color=#01DFD7
+##sequence-region	27	1	9638
+27	NucDiff_v2.0	SO:0000001	27	9637	.	.	.	ID=Blk_75;Name=Block;blk_length=9611;query_dir=1;ref_sequence=CP009257.1;ref_coord=59786-71114;color=#000000
+##sequence-region	28	1	9102
+28	NucDiff_v2.0	SO:0000001	8301	9101	.	.	.	ID=Blk_76;Name=Block;blk_length=801;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3099504-3100309;color=#000000
+##sequence-region	30	1	7416
+30	NucDiff_v2.0	SO:0000001	1	7415	.	.	.	ID=Blk_77;Name=Block;blk_length=7415;query_dir=1;ref_sequence=CP009257.1;ref_coord=1076672-1081574;color=#000000
+##sequence-region	31	1	6938
+31	NucDiff_v2.0	SO:0000001	2	220	.	.	.	ID=Blk_78;Name=Block;blk_length=219;query_dir=1;ref_sequence=CP009257.1;ref_coord=3345548-3345766;color=#000000
+##sequence-region	32	1	6854
+32	NucDiff_v2.0	SO:0000001	2	122	.	.	.	ID=Blk_79;Name=Block;blk_length=121;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3944977-3945097;color=#000000
+##sequence-region	33	1	6506
+33	NucDiff_v2.0	SO:0000001	2	6502	.	.	.	ID=Blk_80;Name=Block;blk_length=6501;query_dir=1;ref_sequence=CP009257.1;ref_coord=1828829-1830154;color=#000000
+##sequence-region	35	1	6157
+35	NucDiff_v2.0	SO:0000001	5318	6156	.	.	.	ID=Blk_81;Name=Block;blk_length=839;query_dir=1;ref_sequence=CP009257.1;ref_coord=1458899-1459737;color=#000000
+##sequence-region	36	1	5878
+36	NucDiff_v2.0	SO:0000001	2	5875	.	.	.	ID=Blk_82;Name=Block;blk_length=5874;query_dir=1;ref_sequence=CP009257.1;ref_coord=2795587-2801077;color=#000000
+##sequence-region	37	1	5828
+37	NucDiff_v2.0	SO:0000001	2	1020	.	.	.	ID=Blk_83;Name=Block;blk_length=1019;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1357559-1358653;color=#000000
+37	NucDiff_v2.0	SO:0000001	2	1020	.	.	.	ID=Blk_84;Name=Relocation_block;blk_length=1019;color=#01DFD7
+37	NucDiff_v2.0	SO:0000001	4844	5013	.	.	.	ID=Blk_85;Name=Block;blk_length=170;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1542782-1542951;color=#000000
+37	NucDiff_v2.0	SO:0000001	4844	5013	.	.	.	ID=Blk_86;Name=Relocation_block;blk_length=170;color=#01DFD7
+##sequence-region	38	1	5708
+38	NucDiff_v2.0	SO:0000001	5	5707	.	.	.	ID=Blk_87;Name=Block;blk_length=5703;query_dir=1;ref_sequence=CP009257.1;ref_coord=1168706-1172485;color=#000000
+##sequence-region	39	1	5644
+39	NucDiff_v2.0	SO:0000001	4332	5643	.	.	.	ID=Blk_88;Name=Block;blk_length=1312;query_dir=1;ref_sequence=CP009257.1;ref_coord=2171805-2173116;color=#000000
+##sequence-region	40	1	5631
+40	NucDiff_v2.0	SO:0000001	2	2322	.	.	.	ID=Blk_89;Name=Block;blk_length=2321;query_dir=1;ref_sequence=CP009257.1;ref_coord=593198-602930;color=#000000
+##sequence-region	41	1	5614
+41	NucDiff_v2.0	SO:0000001	1	171	.	.	.	ID=Blk_90;Name=Block;blk_length=171;query_dir=1;ref_sequence=CP009257.1;ref_coord=1617008-1617178;color=#000000
+##sequence-region	42	1	5578
+42	NucDiff_v2.0	SO:0000001	2	4501	.	.	.	ID=Blk_91;Name=Block;blk_length=4500;query_dir=1;ref_sequence=CP009257.1;ref_coord=2970371-2972885;color=#000000
+##sequence-region	45	1	5216
+45	NucDiff_v2.0	SO:0000001	2	1687	.	.	.	ID=Blk_92;Name=Block;blk_length=1686;query_dir=1;ref_sequence=CP009257.1;ref_coord=3133608-3135293;color=#000000
+##sequence-region	46	1	4960
+46	NucDiff_v2.0	SO:0000001	2	4835	.	.	.	ID=Blk_93;Name=Block;blk_length=4834;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1427918-1430966;color=#000000
+##sequence-region	47	1	4794
+47	NucDiff_v2.0	SO:0000001	2	877	.	.	.	ID=Blk_94;Name=Block;blk_length=876;query_dir=1;ref_sequence=CP009257.1;ref_coord=384008-384888;color=#000000
+47	NucDiff_v2.0	SO:0000001	2	877	.	.	.	ID=Blk_95;Name=Relocation_block;blk_length=876;color=#01DFD7
+47	NucDiff_v2.0	SO:0000001	1407	2108	.	.	.	ID=Blk_96;Name=Block;blk_length=702;query_dir=1;ref_sequence=CP009257.1;ref_coord=1324328-1325029;color=#000000
+47	NucDiff_v2.0	SO:0000001	1407	2108	.	.	.	ID=Blk_97;Name=Relocation_block;blk_length=702;color=#01DFD7
+47	NucDiff_v2.0	SO:0000001	3964	4790	.	.	.	ID=Blk_98;Name=Block;blk_length=827;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4111171-4111997;color=#000000
+47	NucDiff_v2.0	SO:0000001	3964	4790	.	.	.	ID=Blk_99;Name=Relocation_block;blk_length=827;color=#01DFD7
+##sequence-region	48	1	4734
+48	NucDiff_v2.0	SO:0000001	1616	4733	.	.	.	ID=Blk_100;Name=Block;blk_length=3118;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2950354-2951774;color=#000000
+##sequence-region	49	1	4681
+49	NucDiff_v2.0	SO:0000001	11	4080	.	.	.	ID=Blk_101;Name=Block;blk_length=4070;query_dir=1;ref_sequence=CP009257.1;ref_coord=3900616-3904688;color=#000000
+##sequence-region	51	1	4064
+51	NucDiff_v2.0	SO:0000001	2	4063	.	.	.	ID=Blk_102;Name=Block;blk_length=4062;query_dir=1;ref_sequence=CP009257.1;ref_coord=3366306-3370367;color=#000000
+##sequence-region	53	1	3873
+53	NucDiff_v2.0	SO:0000001	4	593	.	.	.	ID=Blk_103;Name=Block;blk_length=590;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1977907-1978496;color=#000000
+53	NucDiff_v2.0	SO:0000001	4	593	.	.	.	ID=Blk_104;Name=Relocation_block;blk_length=590;color=#01DFD7
+53	NucDiff_v2.0	SO:0000001	1280	1919	.	.	.	ID=Blk_105;Name=Block;blk_length=640;query_dir=-1;ref_sequence=CP009257.1;ref_coord=408918-409557;color=#000000
+53	NucDiff_v2.0	SO:0000001	1280	1919	.	.	.	ID=Blk_106;Name=Relocation_block;blk_length=640;color=#01DFD7
+53	NucDiff_v2.0	SO:0000001	2495	3873	.	.	.	ID=Blk_107;Name=Block;blk_length=1379;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1339795-1341218;color=#000000
+53	NucDiff_v2.0	SO:0000001	2495	3873	.	.	.	ID=Blk_108;Name=Relocation_block;blk_length=1379;color=#01DFD7
+##sequence-region	54	1	3861
+54	NucDiff_v2.0	SO:0000001	2	3860	.	.	.	ID=Blk_109;Name=Block;blk_length=3859;query_dir=1;ref_sequence=CP009257.1;ref_coord=3930568-3934426;color=#000000
+##sequence-region	55	1	3818
+55	NucDiff_v2.0	SO:0000001	2	3818	.	.	.	ID=Blk_110;Name=Block;blk_length=3817;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1099989-1103928;color=#000000
+##sequence-region	56	1	3704
+56	NucDiff_v2.0	SO:0000001	2	1263	.	.	.	ID=Blk_111;Name=Block;blk_length=1262;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3123702-3124962;color=#000000
+##sequence-region	57	1	3692
+57	NucDiff_v2.0	SO:0000001	3524	3691	.	.	.	ID=Blk_112;Name=Block;blk_length=168;query_dir=1;ref_sequence=CP009257.1;ref_coord=2280112-2280279;color=#000000
+##sequence-region	58	1	3625
+58	NucDiff_v2.0	SO:0000001	2	3625	.	.	.	ID=Blk_113;Name=Block;blk_length=3624;query_dir=1;ref_sequence=CP009257.1;ref_coord=2222026-2225641;color=#000000
+##sequence-region	59	1	3520
+59	NucDiff_v2.0	SO:0000001	1	965	.	.	.	ID=Blk_114;Name=Block;blk_length=965;query_dir=1;ref_sequence=CP009257.1;ref_coord=4117146-4118110;color=#000000
+##sequence-region	60	1	3432
+60	NucDiff_v2.0	SO:0000001	2	3344	.	.	.	ID=Blk_115;Name=Block;blk_length=3343;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2618769-2623645;color=#000000
+##sequence-region	61	1	3336
+61	NucDiff_v2.0	SO:0000001	2	3332	.	.	.	ID=Blk_116;Name=Block;blk_length=3331;query_dir=-1;ref_sequence=CP009257.1;ref_coord=175477-178819;color=#000000
+##sequence-region	62	1	3290
+62	NucDiff_v2.0	SO:0000001	2	3290	.	.	.	ID=Blk_117;Name=Block;blk_length=3289;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3135328-3138616;color=#000000
+##sequence-region	63	1	3276
+63	NucDiff_v2.0	SO:0000001	2976	3276	.	.	.	ID=Blk_118;Name=Block;blk_length=301;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1360680-1360981;color=#000000
+##sequence-region	64	1	3244
+64	NucDiff_v2.0	SO:0000001	829	3244	.	.	.	ID=Blk_119;Name=Block;blk_length=2416;query_dir=1;ref_sequence=CP009257.1;ref_coord=1460431-1467501;color=#000000
+##sequence-region	65	1	3194
+65	NucDiff_v2.0	SO:0000001	1484	1882	.	.	.	ID=Blk_120;Name=Block;blk_length=399;query_dir=1;ref_sequence=CP009257.1;ref_coord=1544281-1544679;color=#000000
+65	NucDiff_v2.0	SO:0000001	1484	1882	.	.	.	ID=Blk_121;Name=Relocation_block;blk_length=399;color=#01DFD7
+65	NucDiff_v2.0	SO:0000001	2097	3194	.	.	.	ID=Blk_122;Name=Block;blk_length=1098;query_dir=1;ref_sequence=CP009257.1;ref_coord=1357557-1358654;color=#000000
+65	NucDiff_v2.0	SO:0000001	2097	3194	.	.	.	ID=Blk_123;Name=Relocation_block;blk_length=1098;color=#01DFD7
+##sequence-region	66	1	3148
+66	NucDiff_v2.0	SO:0000001	2126	3148	.	.	.	ID=Blk_124;Name=Block;blk_length=1023;query_dir=1;ref_sequence=CP009257.1;ref_coord=2060908-2061930;color=#000000
+##sequence-region	67	1	3141
+67	NucDiff_v2.0	SO:0000001	2	3134	.	.	.	ID=Blk_125;Name=Block;blk_length=3133;query_dir=1;ref_sequence=CP009257.1;ref_coord=1669819-1672951;color=#000000
+##sequence-region	68	1	3131
+68	NucDiff_v2.0	SO:0000001	2	3128	.	.	.	ID=Blk_126;Name=Block;blk_length=3127;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2939447-2942573;color=#000000
+##sequence-region	69	1	3126
+69	NucDiff_v2.0	SO:0000001	3005	3082	.	.	.	ID=Blk_127;Name=Block;blk_length=78;query_dir=1;ref_sequence=CP009257.1;ref_coord=437603-437679;color=#000000
+69	NucDiff_v2.0	SO:0000001	3005	3082	.	.	.	ID=Blk_128;Name=Relocation_block;blk_length=78;color=#01DFD7
+69	NucDiff_v2.0	SO:0000001	3049	3126	.	.	.	ID=Blk_129;Name=Block;blk_length=78;query_dir=1;ref_sequence=CP009257.1;ref_coord=2001562-2001639;color=#000000
+69	NucDiff_v2.0	SO:0000001	3049	3126	.	.	.	ID=Blk_130;Name=Relocation_block;blk_length=78;color=#01DFD7
+##sequence-region	70	1	3111
+70	NucDiff_v2.0	SO:0000001	1	3111	.	.	.	ID=Blk_131;Name=Block;blk_length=3111;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1330107-1333217;color=#000000
+##sequence-region	71	1	3071
+71	NucDiff_v2.0	SO:0000001	4	3071	.	.	.	ID=Blk_132;Name=Block;blk_length=3068;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2934685-2937752;color=#000000
+##sequence-region	73	1	3032
+73	NucDiff_v2.0	SO:0000001	1	3031	.	.	.	ID=Blk_133;Name=Block;blk_length=3031;query_dir=1;ref_sequence=CP009257.1;ref_coord=1216508-1219538;color=#000000
+##sequence-region	74	1	2902
+74	NucDiff_v2.0	SO:0000001	5	2902	.	.	.	ID=Blk_134;Name=Block;blk_length=2898;query_dir=1;ref_sequence=CP009257.1;ref_coord=2793343-2795585;color=#000000
+##sequence-region	75	1	2891
+75	NucDiff_v2.0	SO:0000001	1	1156	.	.	.	ID=Blk_135;Name=Block;blk_length=1156;query_dir=1;ref_sequence=CP009257.1;ref_coord=3905815-3906982;color=#000000
+##sequence-region	77	1	2784
+77	NucDiff_v2.0	SO:0000001	1	2783	.	.	.	ID=Blk_136;Name=Block;blk_length=2783;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3338850-3340663;color=#000000
+##sequence-region	78	1	2662
+78	NucDiff_v2.0	SO:0000001	2195	2661	.	.	.	ID=Blk_137;Name=Block;blk_length=467;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1751533-1751997;color=#000000
+##sequence-region	79	1	2628
+79	NucDiff_v2.0	SO:0000001	2	2627	.	.	.	ID=Blk_138;Name=Block;blk_length=2626;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4112525-4115151;color=#000000
+##sequence-region	80	1	2612
+80	NucDiff_v2.0	SO:0000001	2	2608	.	.	.	ID=Blk_139;Name=Block;blk_length=2607;query_dir=1;ref_sequence=CP009257.1;ref_coord=2339637-2342242;color=#000000
+##sequence-region	81	1	2602
+81	NucDiff_v2.0	SO:0000001	2	2602	.	.	.	ID=Blk_140;Name=Block;blk_length=2601;query_dir=1;ref_sequence=CP009257.1;ref_coord=3125685-3128285;color=#000000
+##sequence-region	82	1	2506
+82	NucDiff_v2.0	SO:0000001	5	2505	.	.	.	ID=Blk_141;Name=Block;blk_length=2501;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1673415-1675915;color=#000000
+##sequence-region	83	1	2480
+83	NucDiff_v2.0	SO:0000001	1	2480	.	.	.	ID=Blk_142;Name=Block;blk_length=2480;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1325585-1328064;color=#000000
+##sequence-region	84	1	2473
+84	NucDiff_v2.0	SO:0000001	2	2472	.	.	.	ID=Blk_143;Name=Block;blk_length=2471;query_dir=1;ref_sequence=CP009257.1;ref_coord=2168314-2170784;color=#000000
+##sequence-region	85	1	2465
+85	NucDiff_v2.0	SO:0000001	373	2464	.	.	.	ID=Blk_144;Name=Block;blk_length=2092;query_dir=1;ref_sequence=CP009257.1;ref_coord=1811982-1814073;color=#000000
+##sequence-region	86	1	2446
+86	NucDiff_v2.0	SO:0000001	2	443	.	.	.	ID=Blk_145;Name=Block;blk_length=442;query_dir=1;ref_sequence=CP009257.1;ref_coord=1322689-1323131;color=#000000
+86	NucDiff_v2.0	SO:0000001	2	443	.	.	.	ID=Blk_146;Name=Relocation_block;blk_length=442;color=#01DFD7
+86	NucDiff_v2.0	SO:0000001	2333	2446	.	.	.	ID=Blk_147;Name=Block;blk_length=114;query_dir=1;ref_sequence=CP009257.1;ref_coord=1509720-1509833;color=#000000
+86	NucDiff_v2.0	SO:0000001	2333	2446	.	.	.	ID=Blk_148;Name=Relocation_block;blk_length=114;color=#01DFD7
+##sequence-region	87	1	2396
+87	NucDiff_v2.0	SO:0000001	2	2395	.	.	.	ID=Blk_149;Name=Block;blk_length=2394;query_dir=1;ref_sequence=CP009257.1;ref_coord=4000517-4002910;color=#000000
+##sequence-region	88	1	2390
+88	NucDiff_v2.0	SO:0000001	1	2390	.	.	.	ID=Blk_150;Name=Block;blk_length=2390;query_dir=1;ref_sequence=CP009257.1;ref_coord=3454321-3456710;color=#000000
+##sequence-region	89	1	2361
+89	NucDiff_v2.0	SO:0000001	2	2361	.	.	.	ID=Blk_151;Name=Block;blk_length=2360;query_dir=-1;ref_sequence=CP009257.1;ref_coord=181096-183453;color=#000000
+##sequence-region	90	1	2337
+90	NucDiff_v2.0	SO:0000001	2	2336	.	.	.	ID=Blk_152;Name=Block;blk_length=2335;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3363892-3366226;color=#000000
+##sequence-region	91	1	2328
+91	NucDiff_v2.0	SO:0000001	1869	2328	.	.	.	ID=Blk_153;Name=Block;blk_length=460;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1611042-1611502;color=#000000
+##sequence-region	92	1	2319
+92	NucDiff_v2.0	SO:0000001	2	2318	.	.	.	ID=Blk_154;Name=Block;blk_length=2317;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1470426-1472242;color=#000000
+##sequence-region	93	1	2312
+93	NucDiff_v2.0	SO:0000001	1	2312	.	.	.	ID=Blk_155;Name=Block;blk_length=2312;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1868799-1871110;color=#000000
+##sequence-region	94	1	2198
+94	NucDiff_v2.0	SO:0000001	5	2198	.	.	.	ID=Blk_156;Name=Block;blk_length=2194;query_dir=1;ref_sequence=CP009257.1;ref_coord=2088910-2091102;color=#000000
+##sequence-region	96	1	2143
+96	NucDiff_v2.0	SO:0000001	1	2143	.	.	.	ID=Blk_157;Name=Block;blk_length=2143;query_dir=1;ref_sequence=CP009257.1;ref_coord=3343404-3345546;color=#000000
+##sequence-region	97	1	2111
+97	NucDiff_v2.0	SO:0000001	2	646	.	.	.	ID=Blk_158;Name=Block;blk_length=645;query_dir=1;ref_sequence=CP009257.1;ref_coord=1947570-1948214;color=#000000
+##sequence-region	98	1	2083
+98	NucDiff_v2.0	SO:0000001	5	2079	.	.	.	ID=Blk_159;Name=Block;blk_length=2075;query_dir=1;ref_sequence=CP009257.1;ref_coord=1165397-1167471;color=#000000
+##sequence-region	99	1	2036
+99	NucDiff_v2.0	SO:0000001	1383	2035	.	.	.	ID=Blk_160;Name=Block;blk_length=653;query_dir=1;ref_sequence=CP009257.1;ref_coord=2338501-2339154;color=#000000
+##sequence-region	100	1	2035
+100	NucDiff_v2.0	SO:0000001	1	2034	.	.	.	ID=Blk_161;Name=Block;blk_length=2034;query_dir=1;ref_sequence=CP009257.1;ref_coord=4272429-4274462;color=#000000
+##sequence-region	101	1	2023
+101	NucDiff_v2.0	SO:0000001	1	2019	.	.	.	ID=Blk_162;Name=Block;blk_length=2019;query_dir=1;ref_sequence=CP009257.1;ref_coord=441837-443855;color=#000000
+##sequence-region	102	1	2015
+102	NucDiff_v2.0	SO:0000001	1814	2014	.	.	.	ID=Blk_163;Name=Block;blk_length=201;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2107601-2107801;color=#000000
+##sequence-region	103	1	2013
+103	NucDiff_v2.0	SO:0000001	23	676	.	.	.	ID=Blk_164;Name=Block;blk_length=654;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1518532-1519185;color=#000000
+103	NucDiff_v2.0	SO:0000001	23	676	.	.	.	ID=Blk_165;Name=Relocation_block;blk_length=654;color=#01DFD7
+103	NucDiff_v2.0	SO:0000001	26	2006	.	.	.	ID=Blk_166;Name=Block;blk_length=1981;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1330833-1332804;color=#000000
+103	NucDiff_v2.0	SO:0000001	26	2006	.	.	.	ID=Blk_167;Name=Relocation_block;blk_length=1981;color=#01DFD7
+103	NucDiff_v2.0	SO:0000001	1273	2013	.	.	.	ID=Blk_168;Name=Block;blk_length=741;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1517216-1517956;color=#000000
+103	NucDiff_v2.0	SO:0000001	1273	2013	.	.	.	ID=Blk_169;Name=Relocation_block;blk_length=741;color=#01DFD7
+##sequence-region	104	1	2000
+104	NucDiff_v2.0	SO:0000001	2	803	.	.	.	ID=Blk_170;Name=Block;blk_length=802;query_dir=1;ref_sequence=CP009257.1;ref_coord=4014662-4015466;color=#000000
+##sequence-region	105	1	1997
+105	NucDiff_v2.0	SO:0000001	2	1996	.	.	.	ID=Blk_171;Name=Block;blk_length=1995;query_dir=1;ref_sequence=CP009257.1;ref_coord=449338-451332;color=#000000
+##sequence-region	106	1	1992
+106	NucDiff_v2.0	SO:0000001	1	1992	.	.	.	ID=Blk_172;Name=Block;blk_length=1992;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1866806-1868797;color=#000000
+##sequence-region	107	1	1975
+107	NucDiff_v2.0	SO:0000001	1	1971	.	.	.	ID=Blk_173;Name=Block;blk_length=1971;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4281530-4283500;color=#000000
+##sequence-region	108	1	1973
+108	NucDiff_v2.0	SO:0000001	2	1973	.	.	.	ID=Blk_174;Name=Block;blk_length=1972;query_dir=1;ref_sequence=CP009257.1;ref_coord=445940-449087;color=#000000
+##sequence-region	109	1	1965
+109	NucDiff_v2.0	SO:0000001	377	1006	.	.	.	ID=Blk_175;Name=Block;blk_length=630;query_dir=1;ref_sequence=CP009257.1;ref_coord=1062209-1062837;color=#000000
+109	NucDiff_v2.0	SO:0000001	377	1006	.	.	.	ID=Blk_176;Name=Relocation_block;blk_length=630;color=#01DFD7
+109	NucDiff_v2.0	SO:0000001	1259	1964	.	.	.	ID=Blk_177;Name=Block;blk_length=706;query_dir=1;ref_sequence=CP009257.1;ref_coord=1073301-1074006;color=#000000
+109	NucDiff_v2.0	SO:0000001	1259	1964	.	.	.	ID=Blk_178;Name=Relocation_block;blk_length=706;color=#01DFD7
+##sequence-region	110	1	1963
+110	NucDiff_v2.0	SO:0000001	1499	1963	.	.	.	ID=Blk_179;Name=Block;blk_length=465;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1219717-1220181;color=#000000
+##sequence-region	111	1	1939
+111	NucDiff_v2.0	SO:0000001	1	1939	.	.	.	ID=Blk_180;Name=Block;blk_length=1939;query_dir=-1;ref_sequence=CP009257.1;ref_coord=409854-411792;color=#000000
+##sequence-region	112	1	1936
+112	NucDiff_v2.0	SO:0000001	1778	1935	.	.	.	ID=Blk_181;Name=Block;blk_length=158;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2595439-2595596;color=#000000
+##sequence-region	114	1	1904
+114	NucDiff_v2.0	SO:0000001	2	1903	.	.	.	ID=Blk_182;Name=Block;blk_length=1902;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2927617-2929518;color=#000000
+##sequence-region	115	1	1853
+115	NucDiff_v2.0	SO:0000001	2	1852	.	.	.	ID=Blk_183;Name=Block;blk_length=1851;query_dir=1;ref_sequence=CP009257.1;ref_coord=2948343-2950193;color=#000000
+##sequence-region	116	1	1846
+116	NucDiff_v2.0	SO:0000001	1	1005	.	.	.	ID=Blk_184;Name=Block;blk_length=1005;query_dir=1;ref_sequence=CP009257.1;ref_coord=1965359-1966363;color=#000000
+116	NucDiff_v2.0	SO:0000001	1	1005	.	.	.	ID=Blk_185;Name=Relocation_block;blk_length=1005;color=#01DFD7
+116	NucDiff_v2.0	SO:0000001	808	1143	.	.	.	ID=Blk_186;Name=Block;blk_length=336;query_dir=1;ref_sequence=CP009257.1;ref_coord=1334671-1335006;color=#000000
+116	NucDiff_v2.0	SO:0000001	808	1143	.	.	.	ID=Blk_187;Name=Relocation_block;blk_length=336;color=#01DFD7
+##sequence-region	117	1	1840
+117	NucDiff_v2.0	SO:0000001	2	1840	.	.	.	ID=Blk_188;Name=Block;blk_length=1839;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2929520-2931358;color=#000000
+##sequence-region	119	1	1825
+119	NucDiff_v2.0	SO:0000001	1	1824	.	.	.	ID=Blk_189;Name=Block;blk_length=1824;query_dir=1;ref_sequence=CP009257.1;ref_coord=2164859-2166682;color=#000000
+##sequence-region	120	1	1825
+120	NucDiff_v2.0	SO:0000001	35	1825	.	.	.	ID=Blk_190;Name=Block;blk_length=1791;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1344011-1345797;color=#000000
+##sequence-region	121	1	1808
+121	NucDiff_v2.0	SO:0000001	1	1807	.	.	.	ID=Blk_191;Name=Block;blk_length=1807;query_dir=-1;ref_sequence=CP009257.1;ref_coord=892989-894795;color=#000000
+##sequence-region	122	1	1788
+122	NucDiff_v2.0	SO:0000001	2	1787	.	.	.	ID=Blk_192;Name=Block;blk_length=1786;query_dir=-1;ref_sequence=CP009257.1;ref_coord=946121-947906;color=#000000
+##sequence-region	123	1	1786
+123	NucDiff_v2.0	SO:0000001	1	1786	.	.	.	ID=Blk_193;Name=Block;blk_length=1786;query_dir=1;ref_sequence=CP009257.1;ref_coord=1861477-1863262;color=#000000
+##sequence-region	124	1	1769
+124	NucDiff_v2.0	SO:0000001	124	1769	.	.	.	ID=Blk_194;Name=Block;blk_length=1646;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4283504-4285149;color=#000000
+##sequence-region	125	1	1756
+125	NucDiff_v2.0	SO:0000001	1	1756	.	.	.	ID=Blk_195;Name=Block;blk_length=1756;query_dir=-1;ref_sequence=CP009257.1;ref_coord=178821-180584;color=#000000
+##sequence-region	126	1	1689
+126	NucDiff_v2.0	SO:0000001	2	1688	.	.	.	ID=Blk_196;Name=Block;blk_length=1687;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2923845-2925531;color=#000000
+##sequence-region	127	1	1652
+127	NucDiff_v2.0	SO:0000001	2	1652	.	.	.	ID=Blk_197;Name=Block;blk_length=1651;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3072302-3073952;color=#000000
+##sequence-region	128	1	1623
+128	NucDiff_v2.0	SO:0000001	5	1622	.	.	.	ID=Blk_198;Name=Block;blk_length=1618;query_dir=1;ref_sequence=CP009257.1;ref_coord=975889-977506;color=#000000
+##sequence-region	129	1	1620
+129	NucDiff_v2.0	SO:0000001	971	1619	.	.	.	ID=Blk_199;Name=Block;blk_length=649;query_dir=1;ref_sequence=CP009257.1;ref_coord=2860867-2861517;color=#000000
+##sequence-region	131	1	1574
+131	NucDiff_v2.0	SO:0000001	1	1573	.	.	.	ID=Blk_200;Name=Block;blk_length=1573;query_dir=1;ref_sequence=CP009257.1;ref_coord=1675920-1677492;color=#000000
+##sequence-region	132	1	1533
+132	NucDiff_v2.0	SO:0000001	2	1533	.	.	.	ID=Blk_201;Name=Block;blk_length=1532;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2942575-2944106;color=#000000
+##sequence-region	133	1	1517
+133	NucDiff_v2.0	SO:0000001	2	1517	.	.	.	ID=Blk_202;Name=Block;blk_length=1516;query_dir=1;ref_sequence=CP009257.1;ref_coord=3809643-3811158;color=#000000
+##sequence-region	134	1	1509
+134	NucDiff_v2.0	SO:0000001	2	1508	.	.	.	ID=Blk_203;Name=Block;blk_length=1507;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4276467-4277973;color=#000000
+##sequence-region	135	1	1492
+135	NucDiff_v2.0	SO:0000001	2	1491	.	.	.	ID=Blk_204;Name=Block;blk_length=1490;query_dir=1;ref_sequence=CP009257.1;ref_coord=1740423-1741912;color=#000000
+##sequence-region	136	1	1487
+136	NucDiff_v2.0	SO:0000001	1	1486	.	.	.	ID=Blk_205;Name=Block;blk_length=1486;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3132121-3133606;color=#000000
+##sequence-region	137	1	1484
+137	NucDiff_v2.0	SO:0000001	2	1483	.	.	.	ID=Blk_206;Name=Block;blk_length=1482;query_dir=1;ref_sequence=CP009257.1;ref_coord=2968484-2969965;color=#000000
+##sequence-region	138	1	1483
+138	NucDiff_v2.0	SO:0000001	2	1483	.	.	.	ID=Blk_207;Name=Block;blk_length=1482;query_dir=1;ref_sequence=CP009257.1;ref_coord=2932922-2934403;color=#000000
+##sequence-region	139	1	1417
+139	NucDiff_v2.0	SO:0000001	2	1416	.	.	.	ID=Blk_208;Name=Block;blk_length=1415;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3370610-3372024;color=#000000
+##sequence-region	140	1	1379
+140	NucDiff_v2.0	SO:0000001	1	1378	.	.	.	ID=Blk_209;Name=Block;blk_length=1378;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2926238-2927615;color=#000000
+##sequence-region	141	1	1370
+141	NucDiff_v2.0	SO:0000001	1	1369	.	.	.	ID=Blk_210;Name=Block;blk_length=1369;query_dir=1;ref_sequence=CP009257.1;ref_coord=4277975-4279343;color=#000000
+##sequence-region	142	1	1368
+142	NucDiff_v2.0	SO:0000001	8	1364	.	.	.	ID=Blk_211;Name=Block;blk_length=1357;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1163949-1165305;color=#000000
+##sequence-region	143	1	1359
+143	NucDiff_v2.0	SO:0000001	2	1358	.	.	.	ID=Blk_212;Name=Block;blk_length=1357;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2931486-2932842;color=#000000
+##sequence-region	144	1	1349
+144	NucDiff_v2.0	SO:0000001	2	1348	.	.	.	ID=Blk_213;Name=Block;blk_length=1347;query_dir=1;ref_sequence=CP009257.1;ref_coord=4115798-4117144;color=#000000
+##sequence-region	146	1	1328
+146	NucDiff_v2.0	SO:0000001	1	1328	.	.	.	ID=Blk_214;Name=Block;blk_length=1328;query_dir=1;ref_sequence=CP009257.1;ref_coord=1668490-1669817;color=#000000
+##sequence-region	147	1	1328
+147	NucDiff_v2.0	SO:0000001	2	1327	.	.	.	ID=Blk_215;Name=Block;blk_length=1326;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1205713-1206116;color=#000000
+##sequence-region	148	1	1324
+148	NucDiff_v2.0	SO:0000001	2	1323	.	.	.	ID=Blk_216;Name=Block;blk_length=1322;query_dir=1;ref_sequence=CP009257.1;ref_coord=4017920-4019250;color=#000000
+##sequence-region	149	1	1317
+149	NucDiff_v2.0	SO:0000001	2	1316	.	.	.	ID=Blk_217;Name=Block;blk_length=1315;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1468423-1469737;color=#000000
+##sequence-region	151	1	1306
+151	NucDiff_v2.0	SO:0000001	1	1305	.	.	.	ID=Blk_218;Name=Block;blk_length=1305;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2167008-2168312;color=#000000
+##sequence-region	152	1	1293
+152	NucDiff_v2.0	SO:0000001	1	1293	.	.	.	ID=Blk_219;Name=Block;blk_length=1293;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3459133-3460425;color=#000000
+##sequence-region	153	1	1290
+153	NucDiff_v2.0	SO:0000001	1	1290	.	.	.	ID=Blk_220;Name=Block;blk_length=1290;query_dir=1;ref_sequence=CP009257.1;ref_coord=1863277-1864566;color=#000000
+##sequence-region	154	1	1287
+154	NucDiff_v2.0	SO:0000001	1	1286	.	.	.	ID=Blk_221;Name=Block;blk_length=1286;query_dir=1;ref_sequence=CP009257.1;ref_coord=2944108-2945393;color=#000000
+##sequence-region	155	1	1284
+155	NucDiff_v2.0	SO:0000001	846	1284	.	.	.	ID=Blk_222;Name=Block;blk_length=439;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1552328-1552766;color=#000000
+##sequence-region	156	1	1283
+156	NucDiff_v2.0	SO:0000001	2	204	.	.	.	ID=Blk_223;Name=Block;blk_length=203;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3671893-3672095;color=#000000
+##sequence-region	158	1	1244
+158	NucDiff_v2.0	SO:0000001	1	1244	.	.	.	ID=Blk_224;Name=Block;blk_length=1244;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1872980-1874223;color=#000000
+##sequence-region	159	1	1189
+159	NucDiff_v2.0	SO:0000001	77	1188	.	.	.	ID=Blk_225;Name=Block;blk_length=1112;query_dir=1;ref_sequence=CP009257.1;ref_coord=4256446-4257542;color=#000000
+##sequence-region	160	1	1186
+160	NucDiff_v2.0	SO:0000001	1	1185	.	.	.	ID=Blk_226;Name=Block;blk_length=1185;query_dir=-1;ref_sequence=CP009257.1;ref_coord=4279423-4280607;color=#000000
+##sequence-region	161	1	1183
+161	NucDiff_v2.0	SO:0000001	2	1182	.	.	.	ID=Blk_227;Name=Block;blk_length=1181;query_dir=1;ref_sequence=CP009257.1;ref_coord=444329-445509;color=#000000
+##sequence-region	162	1	1178
+162	NucDiff_v2.0	SO:0000001	2	1175	.	.	.	ID=Blk_228;Name=Block;blk_length=1174;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2946364-2947537;color=#000000
+##sequence-region	163	1	1162
+163	NucDiff_v2.0	SO:0000001	1	1161	.	.	.	ID=Blk_229;Name=Block;blk_length=1161;query_dir=1;ref_sequence=CP009257.1;ref_coord=3074539-3079071;color=#000000
+##sequence-region	164	1	1157
+164	NucDiff_v2.0	SO:0000001	2	1157	.	.	.	ID=Blk_230;Name=Block;blk_length=1156;query_dir=1;ref_sequence=CP009257.1;ref_coord=1739468-1740103;color=#000000
+##sequence-region	165	1	1140
+165	NucDiff_v2.0	SO:0000001	976	1140	.	.	.	ID=Blk_231;Name=Block;blk_length=165;query_dir=1;ref_sequence=CP009257.1;ref_coord=1924024-1924189;color=#000000
+##sequence-region	166	1	1132
+166	NucDiff_v2.0	SO:0000001	2	1131	.	.	.	ID=Blk_232;Name=Block;blk_length=1130;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1614251-1615380;color=#000000
+##sequence-region	167	1	1120
+167	NucDiff_v2.0	SO:0000001	1	1120	.	.	.	ID=Blk_233;Name=Block;blk_length=1120;query_dir=-1;ref_sequence=CP009257.1;ref_coord=3452649-3453768;color=#000000
+##sequence-region	168	1	1097
+168	NucDiff_v2.0	SO:0000001	2	1096	.	.	.	ID=Blk_234;Name=Block;blk_length=1095;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2018244-2019338;color=#000000
+##sequence-region	169	1	1081
+169	NucDiff_v2.0	SO:0000001	428	1081	.	.	.	ID=Blk_235;Name=Block;blk_length=654;query_dir=1;ref_sequence=CP009257.1;ref_coord=1973075-1973728;color=#000000
+##sequence-region	170	1	1067
+170	NucDiff_v2.0	SO:0000001	2	1067	.	.	.	ID=Blk_236;Name=Block;blk_length=1066;query_dir=1;ref_sequence=CP009257.1;ref_coord=1743246-1744311;color=#000000
+##sequence-region	171	1	1040
+171	NucDiff_v2.0	SO:0000001	1	1040	.	.	.	ID=Blk_237;Name=Block;blk_length=1040;query_dir=1;ref_sequence=CP009257.1;ref_coord=3457066-3458105;color=#000000
+##sequence-region	172	1	1029
+172	NucDiff_v2.0	SO:0000001	1	1022	.	.	.	ID=Blk_238;Name=Block;blk_length=1022;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1167680-1168701;color=#000000
+##sequence-region	173	1	1013
+173	NucDiff_v2.0	SO:0000001	2	1013	.	.	.	ID=Blk_239;Name=Block;blk_length=1012;query_dir=-1;ref_sequence=CP009257.1;ref_coord=1430968-1431979;color=#000000
+##sequence-region	174	1	1008
+174	NucDiff_v2.0	SO:0000001	1	358	.	.	.	ID=Blk_240;Name=Block;blk_length=358;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2005668-2006025;color=#000000
+174	NucDiff_v2.0	SO:0000001	1	358	.	.	.	ID=Blk_241;Name=Relocation_block;blk_length=358;color=#01DFD7
+174	NucDiff_v2.0	SO:0000001	660	1008	.	.	.	ID=Blk_242;Name=Block;blk_length=349;query_dir=-1;ref_sequence=CP009257.1;ref_coord=2471518-2471866;color=#000000
+174	NucDiff_v2.0	SO:0000001	660	1008	.	.	.	ID=Blk_243;Name=Relocation_block;blk_length=349;color=#01DFD7
+##sequence-region	175	1	1005
+175	NucDiff_v2.0	SO:0000001	2	1005	.	.	.	ID=Blk_244;Name=Block;blk_length=1004;query_dir=1;ref_sequence=CP009257.1;ref_coord=2909307-2910310;color=#000000

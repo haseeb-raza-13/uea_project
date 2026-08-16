@@ -1,0 +1,13 @@
+##gff-version 3
+##sequence-region	1	1	3857737
+1	NucDiff_v2.0	SO:0000001	1	1938410	.	.	.	ID=Blk_1;Name=Block;blk_length=1938410;query_dir=1;ref_sequence=CP012004.1;ref_coord=1919326-3857743;color=#000000
+1	NucDiff_v2.0	SO:0000001	1	1938410	.	.	.	ID=Blk_2;Name=Reshuffling-part_2_gr_0;blk_length=1938410;query_dir=1;ref_sequence=CP012004.1;ref_coord=1919326-3857743;color=#04B404
+1	NucDiff_v2.0	SO:0000001	1938411	3857737	.	.	.	ID=Blk_3;Name=Block;blk_length=1919327;query_dir=1;ref_sequence=CP012004.1;ref_coord=1-1919325;color=#000000
+1	NucDiff_v2.0	SO:0000001	1938411	3857737	.	.	.	ID=Blk_4;Name=Reshuffling-part_1_gr_0;blk_length=1919327;query_dir=1;ref_sequence=CP012004.1;ref_coord=1-1919325;color=#04B404
+##sequence-region	2	1	148955
+2	NucDiff_v2.0	SO:0000001	23859	36963	.	.	.	ID=Blk_5;Name=Block;blk_length=13105;query_dir=1;ref_sequence=CP012004.1;ref_coord=1662258-1675362;color=#000000
+2	NucDiff_v2.0	SO:0000001	23859	36963	.	.	.	ID=Blk_6;Name=Relocation_block;blk_length=13105;color=#01DFD7
+2	NucDiff_v2.0	SO:0000001	48892	49930	.	.	.	ID=Blk_7;Name=Block;blk_length=1039;query_dir=-1;ref_sequence=CP012004.1;ref_coord=2939729-2940767;color=#000000
+2	NucDiff_v2.0	SO:0000001	48892	49930	.	.	.	ID=Blk_8;Name=Relocation_block;blk_length=1039;color=#01DFD7
+2	NucDiff_v2.0	SO:0000001	143553	144862	.	.	.	ID=Blk_9;Name=Block;blk_length=1310;query_dir=-1;ref_sequence=CP012004.1;ref_coord=2048992-2050301;color=#000000
+2	NucDiff_v2.0	SO:0000001	143553	144862	.	.	.	ID=Blk_10;Name=Relocation_block;blk_length=1310;color=#01DFD7

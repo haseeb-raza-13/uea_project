@@ -1,0 +1,6 @@
+strain,reference,query,ani_percent,bidirectional_fragments,total_query_fragments,fraction_mapped,total_differences,insertions,deletions,substitutions,translocations,relocations,reshufflings,reshuffled_blocks,inversions,unaligned_sequences,n_contigs,total_assembly_len,largest_contig_len,largest_contig_frac
+mff,reference_seq/mff.fna,hybrid_assembly/Hgn_mff_n.fasta,99.9996,1279,1341,0.9538,58,9,1,43,0,2,1,2,0,2,4,4031403,3857737,0.9569
+VU,reference_seq/8VU.fna,hybrid_assembly/Hgn_VU_n.fasta,99.9989,1291,1308,0.9870,114,4,5,102,0,1,0,0,0,1,2,3925871,3901160,0.9937
+AB30,reference_seq/AB30.fna,hybrid_assembly/Hgn_AB30_n.fasta,99.9849,1404,1652,0.8499,10005,434,232,9281,0,32,1,2,2,22,175,5222919,1515311,0.2901
+AB42,reference_seq/AB42.fna,hybrid_assembly/Hgn_AB042_n.fasta,99.9986,1328,1341,0.9903,110,3,3,101,0,0,1,2,0,2,3,4029059,4004348,0.9939
+Lac4,reference_seq/Lac4.fna,hybrid_assembly/Hgn_Lac4_n.fasta,99.9309,1203,1406,0.8556,11701,459,248,10936,0,17,0,0,0,41,192,4513427,274901,0.0609
